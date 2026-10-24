@@ -97,5 +97,19 @@ back, and adds the render pipeline around them.
 `harvest.mjs` fetches them from the gallery onto your machine, and each `MOTION.md` keeps
 the source URL.
 
-Code in this repository is MIT (see [LICENSE](LICENSE)). Rights in each prompt stay with
-its author. If you wrote one and want it out, open an issue.
+Code in this repository is MIT, © **ibrahim ([@ibsleman](https://github.com/ibsleman))** —
+see [LICENSE](LICENSE). Rights in each prompt stay with its author. If you wrote one and
+want it out, open an issue.
+
+### What you can and can't do
+
+**You can** use Kadr commercially — in client work, inside a product or an app, at a
+company — modify it, and keep your changes private.
+
+**The films you make with it are yours.** This licence makes no claim on them, and you owe
+no credit for simply using the tool.
+
+**If you redistribute the code** — ship it in a product, publish a fork, bundle it into
+another skill — you must keep the copyright notice and the licence text with it. That
+notice names the author. Stripping it, or presenting this work as your own, is not
+permitted.
