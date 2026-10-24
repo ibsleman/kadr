@@ -523,6 +523,15 @@ function shot6(t) {
     ctx.restore();
   }
 
+  // the byline, set under the lockup
+  const kb = seg(p, 0.40, 0.18);
+  if (kb > 0) {
+    ctx.globalAlpha = easeOutQuint(kb);
+    setFont(UI, 29, 500, 5); ctx.textAlign = 'center'; ctx.fillStyle = '#7E7A71';
+    ctx.fillText('by Ibrahim Sleman', W / 2, H * 0.592);
+    ctx.globalAlpha = 1;
+  }
+
   // one line, no claims
   const ks = seg(p, 0.46, 0.20);
   if (ks > 0) {

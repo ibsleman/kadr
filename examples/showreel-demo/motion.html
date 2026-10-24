@@ -548,6 +548,15 @@ function shot6(t, fade) {
     ctx.globalAlpha = 1;
   }
 
+  // the byline, under the rule
+  const by = easeOutQuint(seg(p, 0.34, 0.16));
+  if (by > 0) {
+    ctx.globalAlpha = fade * by;
+    ctx.fillStyle = PAPER; setType(34, 600, 7); ctx.textAlign = 'center';
+    ctx.fillText('BY IBRAHIM SLEMAN', W / 2, H * 0.56 + 112);
+    ctx.textAlign = 'left'; ctx.globalAlpha = 1;
+  }
+
   // the one line of small type
   const sub = easeOutQuint(seg(p, 0.42, 0.18));
   if (sub > 0) {
