@@ -1,7 +1,9 @@
 # Notice
 
-Kadr is **MIT licensed** — see [LICENSE](LICENSE).
-Copyright © 2026 ibrahim ([@ibsleman](https://github.com/ibsleman)).
+**Kadr by Ibrahim Sleman.**
+
+MIT licensed — see [LICENSE](LICENSE).
+Copyright © 2026 Ibrahim Sleman ([@ibsleman](https://github.com/ibsleman)).
 
 ## Attribution, in plain language
 
@@ -9,6 +11,10 @@ If you redistribute this code, or a substantial part of it — in a product, a r
 app, a service, a fork, paid or free — you must keep the copyright notice and the licence
 text with it. That notice names the author. Removing it, or presenting this work as your
 own, is not permitted.
+
+The credit to carry is:
+
+> **Kadr by Ibrahim Sleman** — https://github.com/ibsleman/kadr
 
 You do **not** owe a credit for simply using Kadr to make a video. Films you render with it
 are yours, and this licence makes no claim on them.
