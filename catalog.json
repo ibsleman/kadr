@@ -1,0 +1,3560 @@
+{
+  "source": "https://prompt-motion.com",
+  "references": "Not redistributed. Run `node scripts/harvest.mjs --all` to fetch them from the source gallery.",
+  "count": 236,
+  "motions": [
+    {
+      "name": "3d-motion-design-showreel",
+      "title": "3D motion design showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Music"
+      ],
+      "author": "Sahil Malgundkar",
+      "handle": "@sahildesigner23",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/sahildesigner23-ee3155",
+      "post": "https://x.com/sahildesigner23/status/2103536115563307120",
+      "reference": "motions/3d-motion-design-showreel/reference.mp4",
+      "path": "motions/3d-motion-design-showreel/MOTION.md"
+    },
+    {
+      "name": "abstract-motion-design-reel",
+      "title": "Abstract motion design reel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Music"
+      ],
+      "author": "Ajith",
+      "handle": "@ajith_io",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ajith-io-b5626e",
+      "post": "https://x.com/ajith_io/status/2103449416325890146",
+      "reference": "motions/abstract-motion-design-reel/reference.mp4",
+      "path": "motions/abstract-motion-design-reel/MOTION.md"
+    },
+    {
+      "name": "agenthud-project-motion-video",
+      "title": "AgentHud project motion video",
+      "tags": [
+        "Product UI",
+        "Code"
+      ],
+      "author": "Jazzen Chen",
+      "handle": "@Jazzen_Chen",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/jazzen-chen-4542ae",
+      "post": "https://x.com/Jazzen_Chen/status/2103751442393894989",
+      "reference": "motions/agenthud-project-motion-video/reference.mp4",
+      "path": "motions/agenthud-project-motion-video/MOTION.md"
+    },
+    {
+      "name": "ai-arena-product-promo",
+      "title": "AI Arena product promo",
+      "tags": [
+        "Product UI",
+        "Code"
+      ],
+      "author": "\u5927\u5e05\u8001\u733f",
+      "handle": "@ezshine",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ezshine-c90d73",
+      "post": "https://x.com/ezshine/status/2103501705698750731",
+      "reference": "motions/ai-arena-product-promo/reference.mp4",
+      "path": "motions/ai-arena-product-promo/MOTION.md"
+    },
+    {
+      "name": "ai-data-centre-3d-film",
+      "title": "AI data centre 3D film",
+      "tags": [
+        "Diagrams"
+      ],
+      "author": "Aman",
+      "handle": "@mdaman010",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/mdaman010-e7226a",
+      "post": "https://x.com/mdaman010/status/2103845689713111079",
+      "reference": "motions/ai-data-centre-3d-film/reference.mp4",
+      "path": "motions/ai-data-centre-3d-film/MOTION.md"
+    },
+    {
+      "name": "ai-data-centre-3d-tour",
+      "title": "AI data centre 3D tour",
+      "tags": [
+        "Diagrams"
+      ],
+      "author": "Sayan Gupta",
+      "handle": "@Sayan_shanky",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/sayan-shanky-f850d8",
+      "post": "https://x.com/Sayan_shanky/status/2103736579449868515",
+      "reference": "motions/ai-data-centre-3d-tour/reference.mp4",
+      "path": "motions/ai-data-centre-3d-tour/MOTION.md"
+    },
+    {
+      "name": "aisa-api-key-promo",
+      "title": "AIsa API key promo",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Rafael",
+      "handle": "@0xfemyn",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/0xfemyn-e114d3",
+      "post": "https://x.com/0xfemyn/status/2103796337041137833",
+      "reference": "motions/aisa-api-key-promo/reference.mp4",
+      "path": "motions/aisa-api-key-promo/MOTION.md"
+    },
+    {
+      "name": "ajustacv-pro-pricing-promo",
+      "title": "AjustaCV Pro pricing promo",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "rafael thayto",
+      "handle": "@thayto_dev",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/thayto-dev-44b911",
+      "post": "https://x.com/thayto_dev/status/2104200591278739735",
+      "reference": "motions/ajustacv-pro-pricing-promo/reference.mp4",
+      "path": "motions/ajustacv-pro-pricing-promo/MOTION.md"
+    },
+    {
+      "name": "alan-agent-platform-promo",
+      "title": "Alan agent platform promo",
+      "tags": [
+        "Product UI",
+        "Diagrams"
+      ],
+      "author": "Prasad Pilla",
+      "handle": "@prasad_pilla",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/prasad-pilla-2c0cba",
+      "post": "https://x.com/prasad_pilla/status/2103728953785496049",
+      "reference": "motions/alan-agent-platform-promo/reference.mp4",
+      "path": "motions/alan-agent-platform-promo/MOTION.md"
+    },
+    {
+      "name": "allinvestview-product-promo",
+      "title": "AllInvestView product promo",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Charts"
+      ],
+      "author": "Rob",
+      "handle": "@rammanq",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/rammanq-f5a90f",
+      "post": "https://x.com/rammanq/status/2103788796022034553",
+      "reference": "motions/allinvestview-product-promo/reference.mp4",
+      "path": "motions/allinvestview-product-promo/MOTION.md"
+    },
+    {
+      "name": "amazon-wholesale-pitch-video",
+      "title": "Amazon wholesale pitch video",
+      "tags": [
+        "Product UI",
+        "Kinetic type"
+      ],
+      "author": "Tyler",
+      "handle": "@ceowinkz",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ceowinkz-7c776b",
+      "post": "https://x.com/ceowinkz/status/2103647124126683602",
+      "reference": "motions/amazon-wholesale-pitch-video/reference.mp4",
+      "path": "motions/amazon-wholesale-pitch-video/MOTION.md"
+    },
+    {
+      "name": "animated-agent-session-story",
+      "title": "Animated agent session story",
+      "tags": [
+        "Characters"
+      ],
+      "author": "Jake Moran",
+      "handle": "@jake11moran",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/jake11moran-a269c4",
+      "post": "https://x.com/jake11moran/status/2103247490237825416",
+      "reference": "motions/animated-agent-session-story/reference.mp4",
+      "path": "motions/animated-agent-session-story/MOTION.md"
+    },
+    {
+      "name": "animated-business-explainer",
+      "title": "Animated business explainer",
+      "tags": [
+        "Diagrams"
+      ],
+      "author": "Alex Prompter",
+      "handle": "@alex_prompter",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/alex-prompter-1ea044",
+      "post": "https://x.com/alex_prompter/status/2103499977632997524",
+      "reference": "motions/animated-business-explainer/reference.mp4",
+      "path": "motions/animated-business-explainer/MOTION.md"
+    },
+    {
+      "name": "animated-short-about-a-bug",
+      "title": "Animated short about a bug",
+      "tags": [
+        "Characters",
+        "Code"
+      ],
+      "author": "\u00c7a\u011fr\u0131 | KAM Studio",
+      "handle": "@KamStudioLabs",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/kamstudiolabs-c9bb28",
+      "post": "https://x.com/KamStudioLabs/status/2102903173161877996",
+      "reference": "motions/animated-short-about-a-bug/reference.mp4",
+      "path": "motions/animated-short-about-a-bug/MOTION.md"
+    },
+    {
+      "name": "animated-space-cartoon-episode",
+      "title": "Animated space cartoon episode",
+      "tags": [
+        "Characters"
+      ],
+      "author": "Ryzoft",
+      "handle": "@Ryzoft",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ryzoft-4f85bd",
+      "post": "https://x.com/Ryzoft/status/2102989395359887481",
+      "reference": "motions/animated-space-cartoon-episode/reference.mp4",
+      "path": "motions/animated-space-cartoon-episode/MOTION.md"
+    },
+    {
+      "name": "anime-maid-dance-showreel",
+      "title": "Anime maid dance showreel",
+      "tags": [
+        "Kinetic type",
+        "Characters",
+        "Music"
+      ],
+      "author": "\u3068\u3074\u3068\u3074AI@Nocteria",
+      "handle": "@_topi_003",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/topi-003-b0e12c",
+      "post": "https://x.com/_topi_003/status/2104088986969055288",
+      "reference": "motions/anime-maid-dance-showreel/reference.mp4",
+      "path": "motions/anime-maid-dance-showreel/MOTION.md"
+    },
+    {
+      "name": "anime-robot-combining-sequence",
+      "title": "Anime robot combining sequence",
+      "tags": [
+        "Characters"
+      ],
+      "author": "\u98a8\u306e\u6c11@",
+      "handle": "@allforbigfire",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/allforbigfire-86ff3c",
+      "post": "https://x.com/allforbigfire/status/2104193522715029657",
+      "reference": "motions/anime-robot-combining-sequence/reference.mp4",
+      "path": "motions/anime-robot-combining-sequence/MOTION.md"
+    },
+    {
+      "name": "backlink-audit-data-promo",
+      "title": "Backlink audit data promo",
+      "tags": [
+        "Charts",
+        "Kinetic type"
+      ],
+      "author": "Bagchi da \ud83e\udd6c",
+      "handle": "@PalashBagchi11",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/palashbagchi11-0a4b6b",
+      "post": "https://x.com/PalashBagchi11/status/2102924409124389221",
+      "reference": "motions/backlink-audit-data-promo/reference.mp4",
+      "path": "motions/backlink-audit-data-promo/MOTION.md"
+    },
+    {
+      "name": "badge-unlock-screen-animation",
+      "title": "Badge unlock screen animation",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Particles"
+      ],
+      "author": "Ritu",
+      "handle": "@BThreeAgency",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/bthreeagency-b9b8d9",
+      "post": "https://x.com/BThreeAgency/status/2103739079745827092",
+      "reference": "motions/badge-unlock-screen-animation/reference.mp4",
+      "path": "motions/badge-unlock-screen-animation/MOTION.md"
+    },
+    {
+      "name": "ball-escaping-twelve-rings",
+      "title": "Ball escaping twelve rings",
+      "tags": [
+        "Shapes",
+        "Music"
+      ],
+      "author": "Kent",
+      "handle": "@kantamk",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/kantamk-61f410",
+      "post": "https://x.com/kantamk/status/2103148907228176511",
+      "reference": "motions/ball-escaping-twelve-rings/reference.mp4",
+      "path": "motions/ball-escaping-twelve-rings/MOTION.md"
+    },
+    {
+      "name": "beat-synced-bouncing-3d-ball",
+      "title": "Beat-synced bouncing 3D ball",
+      "tags": [
+        "Music"
+      ],
+      "author": "Gorden Sun",
+      "handle": "@Gorden_Sun",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/gorden-sun-041f56",
+      "post": "https://x.com/Gorden_Sun/status/2105302007896797351",
+      "reference": "motions/beat-synced-bouncing-3d-ball/reference.mp4",
+      "path": "motions/beat-synced-bouncing-3d-ball/MOTION.md"
+    },
+    {
+      "name": "bentosurf-product-video",
+      "title": "Bento.surf product video",
+      "tags": [
+        "Product UI",
+        "Phone"
+      ],
+      "author": "Yash Gawde",
+      "handle": "@bizibeast",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/bizibeast-10f264",
+      "post": "https://x.com/bizibeast/status/2103696876130505124",
+      "reference": "motions/bentosurf-product-video/reference.mp4",
+      "path": "motions/bentosurf-product-video/MOTION.md"
+    },
+    {
+      "name": "black-hole-time-story",
+      "title": "Black hole time story",
+      "tags": [],
+      "author": "\u8a00\u4e00\u793e",
+      "handle": "@RebutonePress",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/rebutonepress-810f78",
+      "post": "https://x.com/RebutonePress/status/2103478369245688099",
+      "reference": "motions/black-hole-time-story/reference.mp4",
+      "path": "motions/black-hole-time-story/MOTION.md"
+    },
+    {
+      "name": "blue-editorial-motion-showreel",
+      "title": "Blue editorial motion showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Music"
+      ],
+      "author": "fionn",
+      "handle": "@fionntobin",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/fionntobin-97b7af",
+      "post": "https://x.com/fionntobin/status/2103510776690479597",
+      "reference": "motions/blue-editorial-motion-showreel/reference.mp4",
+      "path": "motions/blue-editorial-motion-showreel/MOTION.md"
+    },
+    {
+      "name": "bold-kinetic-type-showreel",
+      "title": "Bold kinetic type showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Particles"
+      ],
+      "author": "kirill sh",
+      "handle": "@shneural",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/shneural-2abdfa",
+      "post": "https://x.com/shneural/status/2103151003272962130",
+      "reference": "motions/bold-kinetic-type-showreel/reference.mp4",
+      "path": "motions/bold-kinetic-type-showreel/MOTION.md"
+    },
+    {
+      "name": "bold-pilot-seo-promo",
+      "title": "Bold Pilot SEO promo",
+      "tags": [
+        "Product UI",
+        "Charts",
+        "Kinetic type"
+      ],
+      "author": "Ahmet Saridag",
+      "handle": "@utopyaszx",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/utopyaszx-1b2f94",
+      "post": "https://x.com/utopyaszx/status/2104665591428624771",
+      "reference": "motions/bold-pilot-seo-promo/reference.mp4",
+      "path": "motions/bold-pilot-seo-promo/MOTION.md"
+    },
+    {
+      "name": "bold-typographic-motion-showreel",
+      "title": "Bold typographic motion showreel",
+      "tags": [
+        "Charts",
+        "Kinetic type",
+        "Shapes"
+      ],
+      "author": "Danny",
+      "handle": "@motiondsgnr",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/motiondsgnr-9dcfa6",
+      "post": "https://x.com/motiondsgnr/status/2103692944771313960",
+      "reference": "motions/bold-typographic-motion-showreel/reference.mp4",
+      "path": "motions/bold-typographic-motion-showreel/MOTION.md"
+    },
+    {
+      "name": "branding-agency-showreel",
+      "title": "Branding agency showreel",
+      "tags": [
+        "Kinetic type",
+        "Photos"
+      ],
+      "author": "Jackson Greathouse Fall",
+      "handle": "@jacksonfall",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/jacksonfall-54b2ac",
+      "post": "https://x.com/jacksonfall/status/2103925420211229164",
+      "reference": "motions/branding-agency-showreel/reference.mp4",
+      "path": "motions/branding-agency-showreel/MOTION.md"
+    },
+    {
+      "name": "brieform-product-presentation",
+      "title": "Brieform product presentation",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Dany",
+      "handle": "@MajorBaguette",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/majorbaguette-fb11d7",
+      "post": "https://x.com/MajorBaguette/status/2103849602826834228",
+      "reference": "motions/brieform-product-presentation/reference.mp4",
+      "path": "motions/brieform-product-presentation/MOTION.md"
+    },
+    {
+      "name": "browser-automation-skill-launch",
+      "title": "Browser automation skill launch",
+      "tags": [
+        "Product UI",
+        "Music",
+        "Code"
+      ],
+      "author": "Kai",
+      "handle": "@hqmank",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/hqmank-7c61f1",
+      "post": "https://x.com/hqmank/status/2103831140033241156",
+      "reference": "motions/browser-automation-skill-launch/reference.mp4",
+      "path": "motions/browser-automation-skill-launch/MOTION.md"
+    },
+    {
+      "name": "celld-job-ownership-explainer",
+      "title": "Celld job ownership explainer",
+      "tags": [
+        "Diagrams"
+      ],
+      "author": "nick frith",
+      "handle": "@0xnfrith",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/0xnfrith-5be616",
+      "post": "https://x.com/0xnfrith/status/2103358957050068999",
+      "reference": "motions/celld-job-ownership-explainer/reference.mp4",
+      "path": "motions/celld-job-ownership-explainer/MOTION.md"
+    },
+    {
+      "name": "chainwtf-pitch-video",
+      "title": "Chain.wtf pitch video",
+      "tags": [
+        "Kinetic type"
+      ],
+      "author": "SPEAR",
+      "handle": "@SPEARwtf",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/spearwtf-3c1fd1",
+      "post": "https://x.com/SPEARwtf/status/2103857153308029058",
+      "reference": "motions/chainwtf-pitch-video/reference.mp4",
+      "path": "motions/chainwtf-pitch-video/MOTION.md"
+    },
+    {
+      "name": "chaotic-claude-pov-video",
+      "title": "Chaotic Claude POV video",
+      "tags": [
+        "Kinetic type",
+        "Code"
+      ],
+      "author": "kl\u00f6ss",
+      "handle": "@kloss_xyz",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/kloss-xyz-15182a",
+      "post": "https://x.com/kloss_xyz/status/2103664956482941143",
+      "reference": "motions/chaotic-claude-pov-video/reference.mp4",
+      "path": "motions/chaotic-claude-pov-video/MOTION.md"
+    },
+    {
+      "name": "chunku-product-promo",
+      "title": "Chunku product promo",
+      "tags": [
+        "Product UI",
+        "Kinetic type"
+      ],
+      "author": "reyzostyle",
+      "handle": "@reyzostyle",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/reyzostyle-b55864",
+      "post": "https://x.com/reyzostyle/status/2105421514665542114",
+      "reference": "motions/chunku-product-promo/reference.mp4",
+      "path": "motions/chunku-product-promo/MOTION.md"
+    },
+    {
+      "name": "chuseok-pixel-night-scene",
+      "title": "Chuseok pixel night scene",
+      "tags": [
+        "Characters"
+      ],
+      "author": "\ud638\uc694\uc694\ud83c\udf31",
+      "handle": "@hoyoyoda",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/hoyoyoda-3a5c08",
+      "post": "https://x.com/hoyoyoda/status/2103400046922543147",
+      "reference": "motions/chuseok-pixel-night-scene/reference.mp4",
+      "path": "motions/chuseok-pixel-night-scene/MOTION.md"
+    },
+    {
+      "name": "cinetic-skill-launch-film",
+      "title": "Cinetic skill launch film",
+      "tags": [
+        "Product UI",
+        "Code"
+      ],
+      "author": "Leon Lin",
+      "handle": "@LexnLin",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/lexnlin-6161a6",
+      "post": "https://x.com/LexnLin/status/2106891315371737480",
+      "reference": "motions/cinetic-skill-launch-film/reference.mp4",
+      "path": "motions/cinetic-skill-launch-film/MOTION.md"
+    },
+    {
+      "name": "claude-motion-design-reel",
+      "title": "Claude motion design reel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Particles",
+        "Music"
+      ],
+      "author": "Tequila Funk",
+      "handle": "@tequilafunks",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/tequilafunks-97f6c9",
+      "post": "https://x.com/tequilafunks/status/2103528644828127728",
+      "reference": "motions/claude-motion-design-reel/reference.mp4",
+      "path": "motions/claude-motion-design-reel/MOTION.md"
+    },
+    {
+      "name": "claude-motion-design-reel-ghinaiya_nirmal",
+      "title": "Claude motion design reel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Music"
+      ],
+      "author": "Nirmal Ghinaiya",
+      "handle": "@ghinaiya_nirmal",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ghinaiya-nirmal-5d8fec",
+      "post": "https://x.com/ghinaiya_nirmal/status/2103540656182308943",
+      "reference": "motions/claude-motion-design-reel-ghinaiya_nirmal/reference.mp4",
+      "path": "motions/claude-motion-design-reel-ghinaiya_nirmal/MOTION.md"
+    },
+    {
+      "name": "claude-motion-design-showreel",
+      "title": "Claude motion design showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Particles"
+      ],
+      "author": "Kiran",
+      "handle": "@sudo_kiran",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/sudo-kiran-49176d",
+      "post": "https://x.com/sudo_kiran/status/2103463886372696074",
+      "reference": "motions/claude-motion-design-showreel/reference.mp4",
+      "path": "motions/claude-motion-design-showreel/MOTION.md"
+    },
+    {
+      "name": "claude-motion-design-showreel-ayushunleashed",
+      "title": "Claude motion design showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Particles",
+        "Music"
+      ],
+      "author": "Ayush Yadav",
+      "handle": "@ayushunleashed",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ayushunleashed-ece3e3",
+      "post": "https://x.com/ayushunleashed/status/2103794962257084755",
+      "reference": "motions/claude-motion-design-showreel-ayushunleashed/reference.mp4",
+      "path": "motions/claude-motion-design-showreel-ayushunleashed/MOTION.md"
+    },
+    {
+      "name": "claude-motion-design-showreel-rendesr",
+      "title": "Claude motion design showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes"
+      ],
+      "author": "rendesr",
+      "handle": "@rendesr",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/rendesr-86be44",
+      "post": "https://x.com/rendesr/status/2103395846578676116",
+      "reference": "motions/claude-motion-design-showreel-rendesr/reference.mp4",
+      "path": "motions/claude-motion-design-showreel-rendesr/MOTION.md"
+    },
+    {
+      "name": "claude-motion-designer-showreel",
+      "title": "Claude motion designer showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Music"
+      ],
+      "author": "Stephan Livera",
+      "handle": "@stephanlivera",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/stephanlivera-df17a2",
+      "post": "https://x.com/stephanlivera/status/2103315922098470926",
+      "reference": "motions/claude-motion-designer-showreel/reference.mp4",
+      "path": "motions/claude-motion-designer-showreel/MOTION.md"
+    },
+    {
+      "name": "claude-motion-designer-showreel-3xtihor",
+      "title": "Claude motion designer showreel",
+      "tags": [
+        "Charts",
+        "Kinetic type",
+        "Shapes",
+        "Music"
+      ],
+      "author": "tihor",
+      "handle": "@3xtihor",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/3xtihor-0f6911",
+      "post": "https://x.com/3xtihor/status/2103551886272159839",
+      "reference": "motions/claude-motion-designer-showreel-3xtihor/reference.mp4",
+      "path": "motions/claude-motion-designer-showreel-3xtihor/MOTION.md"
+    },
+    {
+      "name": "claude-motion-designer-showreel-crazyalphaaa",
+      "title": "Claude motion designer showreel",
+      "tags": [
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "Priyansh Arora",
+      "handle": "@CrazyAlphaaa",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/crazyalphaaa-bc7e75",
+      "post": "https://x.com/CrazyAlphaaa/status/2103568486249480622",
+      "reference": "motions/claude-motion-designer-showreel-crazyalphaaa/reference.mp4",
+      "path": "motions/claude-motion-designer-showreel-crazyalphaaa/MOTION.md"
+    },
+    {
+      "name": "claude-motion-reel",
+      "title": "Claude motion reel",
+      "tags": [
+        "Charts",
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "Jason Zhou",
+      "handle": "@jasonzhou1993",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/jasonzhou1993-8595e0",
+      "post": "https://x.com/jasonzhou1993/status/2103663364958515541",
+      "reference": "motions/claude-motion-reel/reference.mp4",
+      "path": "motions/claude-motion-reel/MOTION.md"
+    },
+    {
+      "name": "claude-motion-reel-codestackr",
+      "title": "Claude motion reel",
+      "tags": [
+        "Kinetic type",
+        "Shapes"
+      ],
+      "author": "Jesse Hall",
+      "handle": "@codeSTACKr",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/codestackr-c071bf",
+      "post": "https://x.com/codeSTACKr/status/2103656229717328129",
+      "reference": "motions/claude-motion-reel-codestackr/reference.mp4",
+      "path": "motions/claude-motion-reel-codestackr/MOTION.md"
+    },
+    {
+      "name": "claude-self-intro-motion-graphic",
+      "title": "Claude self-intro motion graphic",
+      "tags": [
+        "Kinetic type",
+        "Shapes"
+      ],
+      "author": "1LittleCoder\ud83d\udcbb",
+      "handle": "@1littlecoder",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/1littlecoder-9fef89",
+      "post": "https://x.com/1littlecoder/status/2103587706999914649",
+      "reference": "motions/claude-self-intro-motion-graphic/reference.mp4",
+      "path": "motions/claude-self-intro-motion-graphic/MOTION.md"
+    },
+    {
+      "name": "claude-self-promo-spot",
+      "title": "Claude self-promo spot",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Kinetic type"
+      ],
+      "author": "Slava S.",
+      "handle": "@slvDev",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/slvdev-64c45a",
+      "post": "https://x.com/slvDev/status/2103569170075975986",
+      "reference": "motions/claude-self-promo-spot/reference.mp4",
+      "path": "motions/claude-self-promo-spot/MOTION.md"
+    },
+    {
+      "name": "clay-style-music-video",
+      "title": "Clay-style music video",
+      "tags": [
+        "Characters",
+        "Music"
+      ],
+      "author": "David Shulman",
+      "handle": "@DavidShulmanFL",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/davidshulmanfl-371638",
+      "post": "https://x.com/DavidShulmanFL/status/2103336310089842921",
+      "reference": "motions/clay-style-music-video/reference.mp4",
+      "path": "motions/clay-style-music-video/MOTION.md"
+    },
+    {
+      "name": "cloudjoi-search-showcase",
+      "title": "CloudJoi search showcase",
+      "tags": [
+        "Product UI",
+        "Photos"
+      ],
+      "author": "Lester",
+      "handle": "@lester_tyy",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/lester-tyy-f897f7",
+      "post": "https://x.com/lester_tyy/status/2103733819568480587",
+      "reference": "motions/cloudjoi-search-showcase/reference.mp4",
+      "path": "motions/cloudjoi-search-showcase/MOTION.md"
+    },
+    {
+      "name": "code-only-motion-design-reel",
+      "title": "Code-only motion design reel",
+      "tags": [
+        "Kinetic type",
+        "Shapes"
+      ],
+      "author": "John Savage",
+      "handle": "@johnsavage_ai",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/johnsavage-ai-b091c0",
+      "post": "https://x.com/johnsavage_ai/status/2103600308010041677",
+      "reference": "motions/code-only-motion-design-reel/reference.mp4",
+      "path": "motions/code-only-motion-design-reel/MOTION.md"
+    },
+    {
+      "name": "collision-driven-music-machine",
+      "title": "Collision-driven music machine",
+      "tags": [
+        "Particles",
+        "Music"
+      ],
+      "author": "\u00c7a\u011fr\u0131 | KAM Studio",
+      "handle": "@KamStudioLabs",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/kamstudiolabs-447565",
+      "post": "https://x.com/KamStudioLabs/status/2102899866762440893",
+      "reference": "motions/collision-driven-music-machine/reference.mp4",
+      "path": "motions/collision-driven-music-machine/MOTION.md"
+    },
+    {
+      "name": "commotion-app-showreel",
+      "title": "Commotion app showreel",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Code"
+      ],
+      "author": "Amol Sawrikar",
+      "handle": "@Amol909S",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/amol909s-27533e",
+      "post": "https://x.com/Amol909S/status/2103456534768607293",
+      "reference": "motions/commotion-app-showreel/reference.mp4",
+      "path": "motions/commotion-app-showreel/MOTION.md"
+    },
+    {
+      "name": "crux-motion-design-showreel",
+      "title": "Crux motion design showreel",
+      "tags": [
+        "Product UI",
+        "Charts",
+        "Kinetic type",
+        "Music"
+      ],
+      "author": "Marouane Gazouzi",
+      "handle": "@marouanegazouzi",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/marouanegazouzi-6071d5",
+      "post": "https://x.com/marouanegazouzi/status/2103608571435131257",
+      "reference": "motions/crux-motion-design-showreel/reference.mp4",
+      "path": "motions/crux-motion-design-showreel/MOTION.md"
+    },
+    {
+      "name": "cycle-of-life-animation",
+      "title": "Cycle of life animation",
+      "tags": [
+        "Characters"
+      ],
+      "author": "Lo\u00efc",
+      "handle": "@loicRambo",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/loicrambo-ad6830",
+      "post": "https://x.com/loicRambo/status/2103428454355980558",
+      "reference": "motions/cycle-of-life-animation/reference.mp4",
+      "path": "motions/cycle-of-life-animation/MOTION.md"
+    },
+    {
+      "name": "database-client-launch-video",
+      "title": "Database client launch video",
+      "tags": [
+        "Product UI",
+        "Code"
+      ],
+      "author": "Max \ud83c\udf0a\ud83d\udcf1",
+      "handle": "@iamMXFSCHR",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/iammxfschr-d68f90",
+      "post": "https://x.com/iamMXFSCHR/status/2103619221296955831",
+      "reference": "motions/database-client-launch-video/reference.mp4",
+      "path": "motions/database-client-launch-video/MOTION.md"
+    },
+    {
+      "name": "datagran-chatgpt-ads-explainer",
+      "title": "Datagran ChatGPT ads explainer",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Charts"
+      ],
+      "author": "Carlos Mendez",
+      "handle": "@charlesmendez",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/charlesmendez-73b6e4",
+      "post": "https://x.com/charlesmendez/status/2102847039415476517",
+      "reference": "motions/datagran-chatgpt-ads-explainer/reference.mp4",
+      "path": "motions/datagran-chatgpt-ads-explainer/MOTION.md"
+    },
+    {
+      "name": "defi-saver-stop-motion-explainer",
+      "title": "DeFi Saver stop-motion explainer",
+      "tags": [
+        "Charts",
+        "Diagrams"
+      ],
+      "author": "nikola_j (\ud83d\udedf,\ud83d\udedf)",
+      "handle": "@_nikolajankovic",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/nikolajankovic-ce4ff4",
+      "post": "https://x.com/_nikolajankovic/status/2102867033100616097",
+      "reference": "motions/defi-saver-stop-motion-explainer/reference.mp4",
+      "path": "motions/defi-saver-stop-motion-explainer/MOTION.md"
+    },
+    {
+      "name": "deliberately-terrible-motion-showreel",
+      "title": "Deliberately terrible motion showreel",
+      "tags": [
+        "Characters"
+      ],
+      "author": "Henk Poley",
+      "handle": "@HenkPoley",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/henkpoley-3d3407",
+      "post": "https://x.com/HenkPoley/status/2104220387613761980",
+      "reference": "motions/deliberately-terrible-motion-showreel/reference.mp4",
+      "path": "motions/deliberately-terrible-motion-showreel/MOTION.md"
+    },
+    {
+      "name": "derivative-concept-explainer",
+      "title": "Derivative concept explainer",
+      "tags": [
+        "Charts",
+        "Diagrams"
+      ],
+      "author": "LinearUncle",
+      "handle": "@LinearUncle",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/linearuncle-5d2bae",
+      "post": "https://x.com/LinearUncle/status/2103128559174971663",
+      "reference": "motions/derivative-concept-explainer/reference.mp4",
+      "path": "motions/derivative-concept-explainer/MOTION.md"
+    },
+    {
+      "name": "design-portfolio-video-reel",
+      "title": "Design portfolio video reel",
+      "tags": [
+        "Product UI",
+        "Phone"
+      ],
+      "author": "Kike Lopez",
+      "handle": "@kikelopezdesign",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/kikelopezdesign-7cc9e8",
+      "post": "https://x.com/kikelopezdesign/status/2103527289619173471",
+      "reference": "motions/design-portfolio-video-reel/reference.mp4",
+      "path": "motions/design-portfolio-video-reel/MOTION.md"
+    },
+    {
+      "name": "developer-portfolio-site-showreel",
+      "title": "Developer portfolio site showreel",
+      "tags": [
+        "Product UI",
+        "Music"
+      ],
+      "author": "Wani",
+      "handle": "@wani_shola",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/wani-shola-16ca7a",
+      "post": "https://x.com/wani_shola/status/2103769906638459278",
+      "reference": "motions/developer-portfolio-site-showreel/reference.mp4",
+      "path": "motions/developer-portfolio-site-showreel/MOTION.md"
+    },
+    {
+      "name": "distilbook-motion-explainer",
+      "title": "DistilBook motion explainer",
+      "tags": [
+        "Product UI",
+        "Diagrams"
+      ],
+      "author": "Kiran",
+      "handle": "@sudo_kiran",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/sudo-kiran-b055de",
+      "post": "https://x.com/sudo_kiran/status/2104846546768670892",
+      "reference": "motions/distilbook-motion-explainer/reference.mp4",
+      "path": "motions/distilbook-motion-explainer/MOTION.md"
+    },
+    {
+      "name": "distilbook-motion-showreel",
+      "title": "Distilbook motion showreel",
+      "tags": [
+        "Product UI",
+        "Kinetic type",
+        "Particles",
+        "Music"
+      ],
+      "author": "razak wants to go to sf",
+      "handle": "@itisRazak",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/itisrazak-3ad902",
+      "post": "https://x.com/itisRazak/status/2103517930424332386",
+      "reference": "motions/distilbook-motion-showreel/reference.mp4",
+      "path": "motions/distilbook-motion-showreel/MOTION.md"
+    },
+    {
+      "name": "distilbook-motion-showreel-ajith_io",
+      "title": "Distilbook motion showreel",
+      "tags": [
+        "Shapes",
+        "Particles"
+      ],
+      "author": "Ajith",
+      "handle": "@ajith_io",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ajith-io-ea7f2d",
+      "post": "https://x.com/ajith_io/status/2103541149709615243",
+      "reference": "motions/distilbook-motion-showreel-ajith_io/reference.mp4",
+      "path": "motions/distilbook-motion-showreel-ajith_io/MOTION.md"
+    },
+    {
+      "name": "distilbook-product-explainer",
+      "title": "DistilBook product explainer",
+      "tags": [
+        "Product UI",
+        "Diagrams"
+      ],
+      "author": "Kiran",
+      "handle": "@sudo_kiran",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/sudo-kiran-6609ed",
+      "post": "https://x.com/sudo_kiran/status/2103761658745335993",
+      "reference": "motions/distilbook-product-explainer/reference.mp4",
+      "path": "motions/distilbook-product-explainer/MOTION.md"
+    },
+    {
+      "name": "distilbook-product-explainer-sudo_kiran",
+      "title": "DistilBook product explainer",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Kiran",
+      "handle": "@sudo_kiran",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/sudo-kiran-4f8b59",
+      "post": "https://x.com/sudo_kiran/status/2103486573476254201",
+      "reference": "motions/distilbook-product-explainer-sudo_kiran/reference.mp4",
+      "path": "motions/distilbook-product-explainer-sudo_kiran/MOTION.md"
+    },
+    {
+      "name": "distilbook-product-video",
+      "title": "Distilbook product video",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Ajith",
+      "handle": "@ajith_io",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ajith-io-c52e09",
+      "post": "https://x.com/ajith_io/status/2103469807375208546",
+      "reference": "motions/distilbook-product-video/reference.mp4",
+      "path": "motions/distilbook-product-video/MOTION.md"
+    },
+    {
+      "name": "distilbook-promo-showreel",
+      "title": "Distilbook promo showreel",
+      "tags": [
+        "Particles"
+      ],
+      "author": "Ajith",
+      "handle": "@ajith_io",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ajith-io-4c248f",
+      "post": "https://x.com/ajith_io/status/2103800569584562538",
+      "reference": "motions/distilbook-promo-showreel/reference.mp4",
+      "path": "motions/distilbook-promo-showreel/MOTION.md"
+    },
+    {
+      "name": "drone-emprit-showreel",
+      "title": "Drone Emprit showreel",
+      "tags": [
+        "Charts",
+        "Particles"
+      ],
+      "author": "Ismail Fahmi",
+      "handle": "@ismailfahmi",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ismailfahmi-557268",
+      "post": "https://x.com/ismailfahmi/status/2103557833153466403",
+      "reference": "motions/drone-emprit-showreel/reference.mp4",
+      "path": "motions/drone-emprit-showreel/MOTION.md"
+    },
+    {
+      "name": "dub-promo-video",
+      "title": "Dub promo video",
+      "tags": [
+        "Product UI",
+        "Charts"
+      ],
+      "author": "Steven Tey",
+      "handle": "@steventey",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/steventey-0d20e4",
+      "post": "https://x.com/steventey/status/2103625902211088880",
+      "reference": "motions/dub-promo-video/reference.mp4",
+      "path": "motions/dub-promo-video/MOTION.md"
+    },
+    {
+      "name": "dubz-up-motion-showreel",
+      "title": "Dubz Up motion showreel",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Kinetic type",
+        "Characters"
+      ],
+      "author": "\ud835\ude72\ud835\ude91\ud835\ude9b\ud835\ude92\ud835\ude9c \u00d7\u035c\u00d7",
+      "handle": "@Devius_Maximus",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/devius-maximus-beab45",
+      "post": "https://x.com/Devius_Maximus/status/2105069053521887428",
+      "reference": "motions/dubz-up-motion-showreel/reference.mp4",
+      "path": "motions/dubz-up-motion-showreel/MOTION.md"
+    },
+    {
+      "name": "easing-and-morphing-showreel",
+      "title": "Easing and morphing showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Music"
+      ],
+      "author": "0xMarioNawfal",
+      "handle": "@RoundtableSpace",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/roundtablespace-d3a1be",
+      "post": "https://x.com/RoundtableSpace/status/2104424611010232366",
+      "reference": "motions/easing-and-morphing-showreel/reference.mp4",
+      "path": "motions/easing-and-morphing-showreel/MOTION.md"
+    },
+    {
+      "name": "email-tool-promo-reel",
+      "title": "Email tool promo reel",
+      "tags": [
+        "Product UI",
+        "Kinetic type"
+      ],
+      "author": "Melvyn \u2022 Builder",
+      "handle": "@melvynx",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/melvynx-6cde6c",
+      "post": "https://x.com/melvynx/status/2103714680577638493",
+      "reference": "motions/email-tool-promo-reel/reference.mp4",
+      "path": "motions/email-tool-promo-reel/MOTION.md"
+    },
+    {
+      "name": "email-verification-tool-promo",
+      "title": "Email verification tool promo",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Khondokar MD Asiful Islam",
+      "handle": "@KmAsiff",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/kmasiff-cc72cb",
+      "post": "https://x.com/KmAsiff/status/2103810247131549880",
+      "reference": "motions/email-verification-tool-promo/reference.mp4",
+      "path": "motions/email-verification-tool-promo/MOTION.md"
+    },
+    {
+      "name": "engraving-style-claude-ad",
+      "title": "Engraving-style Claude ad",
+      "tags": [
+        "Kinetic type",
+        "Photos"
+      ],
+      "author": "Leon Lin",
+      "handle": "@LexnLin",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/lexnlin-038035",
+      "post": "https://x.com/LexnLin/status/2106101651010449796",
+      "reference": "motions/engraving-style-claude-ad/reference.mp4",
+      "path": "motions/engraving-style-claude-ad/MOTION.md"
+    },
+    {
+      "name": "enxovaly-baby-app-promo",
+      "title": "Enxovaly baby app promo",
+      "tags": [
+        "Product UI",
+        "Phone"
+      ],
+      "author": "Gabriel Buzzi",
+      "handle": "@gabrielbuzziv",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/gabrielbuzziv-4ff0c6",
+      "post": "https://x.com/gabrielbuzziv/status/2103590703289057430",
+      "reference": "motions/enxovaly-baby-app-promo/reference.mp4",
+      "path": "motions/enxovaly-baby-app-promo/MOTION.md"
+    },
+    {
+      "name": "eyezon-100-users-thank-you",
+      "title": "EyezOn 100 users thank-you",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Music"
+      ],
+      "author": "Sudiyasa \ud83d\udc41\ufe0f",
+      "handle": "@Sudiyasa_",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/sudiyasa-f48ac9",
+      "post": "https://x.com/Sudiyasa_/status/2103638831669076027",
+      "reference": "motions/eyezon-100-users-thank-you/reference.mp4",
+      "path": "motions/eyezon-100-users-thank-you/MOTION.md"
+    },
+    {
+      "name": "fal-motion-design-showreel",
+      "title": "fal motion design showreel",
+      "tags": [
+        "Kinetic type",
+        "Photos"
+      ],
+      "author": "Bennett | Generative Media | AI SEO @ fal",
+      "handle": "@influencer_seo",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/influencer-seo-ce8c33",
+      "post": "https://x.com/influencer_seo/status/2104827314400026936",
+      "reference": "motions/fal-motion-design-showreel/reference.mp4",
+      "path": "motions/fal-motion-design-showreel/MOTION.md"
+    },
+    {
+      "name": "festival-lineup-promo-reel",
+      "title": "Festival lineup promo reel",
+      "tags": [
+        "Kinetic type"
+      ],
+      "author": "GonMac",
+      "handle": "@GonzaloMacagno",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/gonzalomacagno-2de1a9",
+      "post": "https://x.com/GonzaloMacagno/status/2102897651008344202",
+      "reference": "motions/festival-lineup-promo-reel/reference.mp4",
+      "path": "motions/festival-lineup-promo-reel/MOTION.md"
+    },
+    {
+      "name": "fiery-samurai-kata",
+      "title": "Fiery samurai kata",
+      "tags": [
+        "Particles",
+        "Characters"
+      ],
+      "author": "Christopher J. DiMarco",
+      "handle": "@chrisjdimarco",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/chrisjdimarco-f068db",
+      "post": "https://x.com/chrisjdimarco/status/2103232192847524106",
+      "reference": "motions/fiery-samurai-kata/reference.mp4",
+      "path": "motions/fiery-samurai-kata/MOTION.md"
+    },
+    {
+      "name": "figpad-product-promo",
+      "title": "FigPad product promo",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "AI\u5927\u767d",
+      "handle": "@Ai_Baymax",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ai-baymax-0ef9dd",
+      "post": "https://x.com/Ai_Baymax/status/2103411004902416787",
+      "reference": "motions/figpad-product-promo/reference.mp4",
+      "path": "motions/figpad-product-promo/MOTION.md"
+    },
+    {
+      "name": "first-10-yellow-line-explainer",
+      "title": "First & 10 yellow line explainer",
+      "tags": [
+        "Diagrams"
+      ],
+      "author": "Shannon \ud83d\udcd0",
+      "handle": "@blueoctopusai",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/blueoctopusai-dd17bd",
+      "post": "https://x.com/blueoctopusai/status/2105116391439270222",
+      "reference": "motions/first-10-yellow-line-explainer/reference.mp4",
+      "path": "motions/first-10-yellow-line-explainer/MOTION.md"
+    },
+    {
+      "name": "fitters-bible-app-promo",
+      "title": "Fitters Bible app promo",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Diagrams"
+      ],
+      "author": "Adam",
+      "handle": "@Adamdesgns",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/adamdesgns-478d6d",
+      "post": "https://x.com/Adamdesgns/status/2103542756555768014",
+      "reference": "motions/fitters-bible-app-promo/reference.mp4",
+      "path": "motions/fitters-bible-app-promo/MOTION.md"
+    },
+    {
+      "name": "five-scroll-based-sections",
+      "title": "Five scroll-based sections",
+      "tags": [
+        "Product UI",
+        "Photos"
+      ],
+      "author": "Ercan",
+      "handle": "@ercankeskinx",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ercankeskinx-ec2568",
+      "post": "https://x.com/ercankeskinx/status/2102995443818897906",
+      "reference": "motions/five-scroll-based-sections/reference.mp4",
+      "path": "motions/five-scroll-based-sections/MOTION.md"
+    },
+    {
+      "name": "flexprice-motion-showreel",
+      "title": "Flexprice motion showreel",
+      "tags": [
+        "Charts",
+        "Particles"
+      ],
+      "author": "Sudeep S D",
+      "handle": "@sudeepsd_",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/sudeepsd-1a3485",
+      "post": "https://x.com/sudeepsd_/status/2103776623548158453",
+      "reference": "motions/flexprice-motion-showreel/reference.mp4",
+      "path": "motions/flexprice-motion-showreel/MOTION.md"
+    },
+    {
+      "name": "flowdrive-motion-showreel",
+      "title": "Flowdrive motion showreel",
+      "tags": [
+        "Shapes",
+        "Particles"
+      ],
+      "author": "Manuel Ogomigo",
+      "handle": "@manuelogomigo",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/manuelogomigo-f33ca9",
+      "post": "https://x.com/manuelogomigo/status/2103614667038052364",
+      "reference": "motions/flowdrive-motion-showreel/reference.mp4",
+      "path": "motions/flowdrive-motion-showreel/MOTION.md"
+    },
+    {
+      "name": "food-craving-launch-film",
+      "title": "Food craving launch film",
+      "tags": [
+        "Product UI",
+        "Kinetic type",
+        "Photos",
+        "Music"
+      ],
+      "author": "ultima",
+      "handle": "@ultimaxbt",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ultimaxbt-2ddf1e",
+      "post": "https://x.com/ultimaxbt/status/2108210884799549714",
+      "reference": "motions/food-craving-launch-film/reference.mp4",
+      "path": "motions/food-craving-launch-film/MOTION.md"
+    },
+    {
+      "name": "founderpage-launch-video",
+      "title": "founder.page launch video",
+      "tags": [
+        "Product UI",
+        "Charts"
+      ],
+      "author": "Jaisal \ud83d\udc4b",
+      "handle": "@RatheeJaisal",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ratheejaisal-1f4538",
+      "post": "https://x.com/RatheeJaisal/status/2103774864742154698",
+      "reference": "motions/founderpage-launch-video/reference.mp4",
+      "path": "motions/founderpage-launch-video/MOTION.md"
+    },
+    {
+      "name": "four-seasons-train-window",
+      "title": "Four seasons train window",
+      "tags": [],
+      "author": "Ole Lehmann",
+      "handle": "@itsolelehmann",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/itsolelehmann-e47532",
+      "post": "https://x.com/itsolelehmann/status/2103124033365762215",
+      "reference": "motions/four-seasons-train-window/reference.mp4",
+      "path": "motions/four-seasons-train-window/MOTION.md"
+    },
+    {
+      "name": "frame-by-frame-launch-video",
+      "title": "Frame by Frame launch video",
+      "tags": [
+        "Product UI",
+        "Music"
+      ],
+      "author": "dawood46",
+      "handle": "@notdwd",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/notdwd-7de38a",
+      "post": "https://x.com/notdwd/status/2104229441211969685",
+      "reference": "motions/frame-by-frame-launch-video/reference.mp4",
+      "path": "motions/frame-by-frame-launch-video/MOTION.md"
+    },
+    {
+      "name": "full-stop-figure-sequence",
+      "title": "Full Stop figure sequence",
+      "tags": [
+        "Shapes",
+        "Particles"
+      ],
+      "author": "Heather Cooper",
+      "handle": "@HBCoop_",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/hbcoop-de365c",
+      "post": "https://x.com/HBCoop_/status/2107139305324122491",
+      "reference": "motions/full-stop-figure-sequence/reference.mp4",
+      "path": "motions/full-stop-figure-sequence/MOTION.md"
+    },
+    {
+      "name": "fundmycompute-platform-overview",
+      "title": "FundMyCompute platform overview",
+      "tags": [
+        "Product UI",
+        "Diagrams"
+      ],
+      "author": "Jay Scambler",
+      "handle": "@JayScambler",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/jayscambler-3f8889",
+      "post": "https://x.com/JayScambler/status/2104634653491495095",
+      "reference": "motions/fundmycompute-platform-overview/reference.mp4",
+      "path": "motions/fundmycompute-platform-overview/MOTION.md"
+    },
+    {
+      "name": "gene-spectra-promo",
+      "title": "Gene Spectra promo",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "John",
+      "handle": "@madebyjmayala",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/madebyjmayala-b9204d",
+      "post": "https://x.com/madebyjmayala/status/2103578285892649220",
+      "reference": "motions/gene-spectra-promo/reference.mp4",
+      "path": "motions/gene-spectra-promo/MOTION.md"
+    },
+    {
+      "name": "genvizu-product-launch",
+      "title": "GenVizu product launch",
+      "tags": [
+        "Product UI",
+        "Photos"
+      ],
+      "author": "leolee",
+      "handle": "@listudio",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/listudio-820c7b",
+      "post": "https://x.com/listudio/status/2104431418114023803",
+      "reference": "motions/genvizu-product-launch/reference.mp4",
+      "path": "motions/genvizu-product-launch/MOTION.md"
+    },
+    {
+      "name": "geometric-motion-designer-showreel",
+      "title": "Geometric motion designer showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes"
+      ],
+      "author": "LeonKohli",
+      "handle": "@LeonKohli",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/leonkohli-6dc01b",
+      "post": "https://x.com/LeonKohli/status/2103517696038191220",
+      "reference": "motions/geometric-motion-designer-showreel/reference.mp4",
+      "path": "motions/geometric-motion-designer-showreel/MOTION.md"
+    },
+    {
+      "name": "gravitydex-anime-hype-edit",
+      "title": "GravityDEX anime hype edit",
+      "tags": [
+        "Kinetic type"
+      ],
+      "author": "\ud83e\ude8f Michele | Harmonic",
+      "handle": "@MicheleHarmonic",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/micheleharmonic-77628e",
+      "post": "https://x.com/MicheleHarmonic/status/2103111448352244175",
+      "reference": "motions/gravitydex-anime-hype-edit/reference.mp4",
+      "path": "motions/gravitydex-anime-hype-edit/MOTION.md"
+    },
+    {
+      "name": "handwoven-textiles-brand-explainer",
+      "title": "Handwoven textiles brand explainer",
+      "tags": [
+        "Kinetic type",
+        "Photos"
+      ],
+      "author": "Amit Singha",
+      "handle": "@AmitSingha89",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/amitsingha89-150378",
+      "post": "https://x.com/AmitSingha89/status/2103737604277780553",
+      "reference": "motions/handwoven-textiles-brand-explainer/reference.mp4",
+      "path": "motions/handwoven-textiles-brand-explainer/MOTION.md"
+    },
+    {
+      "name": "history-of-ai-timeline",
+      "title": "History of AI timeline",
+      "tags": [
+        "Diagrams",
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "kl\u00f6ss",
+      "handle": "@kloss_xyz",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/kloss-xyz-fe0c31",
+      "post": "https://x.com/kloss_xyz/status/2103652674336067876",
+      "reference": "motions/history-of-ai-timeline/reference.mp4",
+      "path": "motions/history-of-ai-timeline/MOTION.md"
+    },
+    {
+      "name": "indian-civilisation-history-film",
+      "title": "Indian civilisation history film",
+      "tags": [
+        "Diagrams"
+      ],
+      "author": "Build Fast with AI",
+      "handle": "@BuildFastWithAI",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/buildfastwithai-53234e",
+      "post": "https://x.com/BuildFastWithAI/status/2104451249269780900",
+      "reference": "motions/indian-civilisation-history-film/reference.mp4",
+      "path": "motions/indian-civilisation-history-film/MOTION.md"
+    },
+    {
+      "name": "jev-engineering-showreel",
+      "title": "Jev engineering showreel",
+      "tags": [
+        "Product UI",
+        "Kinetic type",
+        "Music"
+      ],
+      "author": "Mr. Buzzoni",
+      "handle": "@polydao",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/polydao-7a572b",
+      "post": "https://x.com/polydao/status/2103783134206566862",
+      "reference": "motions/jev-engineering-showreel/reference.mp4",
+      "path": "motions/jev-engineering-showreel/MOTION.md"
+    },
+    {
+      "name": "keyframe-motion-design-reel",
+      "title": "Keyframe motion design reel",
+      "tags": [
+        "Kinetic type",
+        "Particles",
+        "Music"
+      ],
+      "author": "\u5c0f\u838e\u7814 AI",
+      "handle": "@Grace_sunnyy",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/grace-sunnyy-29bc61",
+      "post": "https://x.com/Grace_sunnyy/status/2106532575712022677",
+      "reference": "motions/keyframe-motion-design-reel/reference.mp4",
+      "path": "motions/keyframe-motion-design-reel/MOTION.md"
+    },
+    {
+      "name": "kinetic-shapes-showreel",
+      "title": "Kinetic shapes showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Particles"
+      ],
+      "author": "Samarth H K",
+      "handle": "@Shinskinakamoto",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/shinskinakamoto-20190b",
+      "post": "https://x.com/Shinskinakamoto/status/2103580532852589043",
+      "reference": "motions/kinetic-shapes-showreel/reference.mp4",
+      "path": "motions/kinetic-shapes-showreel/MOTION.md"
+    },
+    {
+      "name": "kinetic-type-and-particle-showreel",
+      "title": "Kinetic type and particle showreel",
+      "tags": [
+        "Kinetic type",
+        "Particles",
+        "Music"
+      ],
+      "author": "Mani",
+      "handle": "@m1n9_k7",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/m1n9-k7-ff9ab9",
+      "post": "https://x.com/m1n9_k7/status/2103580011882295601",
+      "reference": "motions/kinetic-type-and-particle-showreel/reference.mp4",
+      "path": "motions/kinetic-type-and-particle-showreel/MOTION.md"
+    },
+    {
+      "name": "kinetic-type-motion-showreel",
+      "title": "Kinetic type motion showreel",
+      "tags": [
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "\u3068\u3074\u3068\u3074AI@Nocteria",
+      "handle": "@_topi_003",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/topi-003-9ca6b5",
+      "post": "https://x.com/_topi_003/status/2104086342204592443",
+      "reference": "motions/kinetic-type-motion-showreel/reference.mp4",
+      "path": "motions/kinetic-type-motion-showreel/MOTION.md"
+    },
+    {
+      "name": "kinetic-type-self-portrait",
+      "title": "Kinetic type self-portrait",
+      "tags": [
+        "Kinetic type"
+      ],
+      "author": "Sourav Bhar",
+      "handle": "@souravbhar871",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/souravbhar871-61f424",
+      "post": "https://x.com/souravbhar871/status/2103711849703477361",
+      "reference": "motions/kinetic-type-self-portrait/reference.mp4",
+      "path": "motions/kinetic-type-self-portrait/MOTION.md"
+    },
+    {
+      "name": "kinetic-type-showreel",
+      "title": "Kinetic type showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes"
+      ],
+      "author": "Eugene C",
+      "handle": "@zheke",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/zheke-38deff",
+      "post": "https://x.com/zheke/status/2103418664854622583",
+      "reference": "motions/kinetic-type-showreel/reference.mp4",
+      "path": "motions/kinetic-type-showreel/MOTION.md"
+    },
+    {
+      "name": "kinetic-type-showreel-itsuki_dev",
+      "title": "Kinetic type showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Music"
+      ],
+      "author": "Itsuki Abe",
+      "handle": "@itsuki_dev",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/itsuki-dev-10942d",
+      "post": "https://x.com/itsuki_dev/status/2103438087204618392",
+      "reference": "motions/kinetic-type-showreel-itsuki_dev/reference.mp4",
+      "path": "motions/kinetic-type-showreel-itsuki_dev/MOTION.md"
+    },
+    {
+      "name": "landing-page-3d-scroll",
+      "title": "Landing page 3D scroll",
+      "tags": [
+        "Product UI",
+        "Kinetic type"
+      ],
+      "author": "zero",
+      "handle": "@twoclipping",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/twoclipping-d89be5",
+      "post": "https://x.com/twoclipping/status/2110329502676951367",
+      "reference": "motions/landing-page-3d-scroll/reference.mp4",
+      "path": "motions/landing-page-3d-scroll/MOTION.md"
+    },
+    {
+      "name": "launch-video-remake-comparison",
+      "title": "Launch video remake comparison",
+      "tags": [
+        "Product UI",
+        "Photos",
+        "Music"
+      ],
+      "author": "dawood46",
+      "handle": "@notdwd",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/notdwd-c2037d",
+      "post": "https://x.com/notdwd/status/2104401208958230764",
+      "reference": "motions/launch-video-remake-comparison/reference.mp4",
+      "path": "motions/launch-video-remake-comparison/MOTION.md"
+    },
+    {
+      "name": "lead-notifi-product-ad",
+      "title": "Lead Notifi product ad",
+      "tags": [
+        "Diagrams",
+        "Kinetic type",
+        "Shapes"
+      ],
+      "author": "Sushil Kumar",
+      "handle": "@leadnotifi",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/leadnotifi-e83f94",
+      "post": "https://x.com/leadnotifi/status/2103628028391960983",
+      "reference": "motions/lead-notifi-product-ad/reference.mp4",
+      "path": "motions/lead-notifi-product-ad/MOTION.md"
+    },
+    {
+      "name": "lidlezz-app-promo",
+      "title": "Lidlezz app promo",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Cans\u0131n",
+      "handle": "@cansincengiz_me",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/cansincengiz-me-cf68dd",
+      "post": "https://x.com/cansincengiz_me/status/2103532681774424245",
+      "reference": "motions/lidlezz-app-promo/reference.mp4",
+      "path": "motions/lidlezz-app-promo/MOTION.md"
+    },
+    {
+      "name": "lighthouse-keeper-silent-short",
+      "title": "Lighthouse keeper silent short",
+      "tags": [
+        "Characters"
+      ],
+      "author": "\u00c7a\u011fr\u0131 | KAM Studio",
+      "handle": "@KamStudioLabs",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/kamstudiolabs-0b0824",
+      "post": "https://x.com/KamStudioLabs/status/2102908742518100086",
+      "reference": "motions/lighthouse-keeper-silent-short/reference.mp4",
+      "path": "motions/lighthouse-keeper-silent-short/MOTION.md"
+    },
+    {
+      "name": "lightspark-social-promo-video",
+      "title": "Lightspark social promo video",
+      "tags": [
+        "Kinetic type",
+        "Code"
+      ],
+      "author": "David Marcus",
+      "handle": "@davidmarcus",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/davidmarcus-a28a60",
+      "post": "https://x.com/davidmarcus/status/2103275618045686217",
+      "reference": "motions/lightspark-social-promo-video/reference.mp4",
+      "path": "motions/lightspark-social-promo-video/MOTION.md"
+    },
+    {
+      "name": "lism-css-10-release-video",
+      "title": "Lism CSS 1.0 release video",
+      "tags": [
+        "Product UI",
+        "Code"
+      ],
+      "author": "\u4e86@Lism",
+      "handle": "@ddryo_loos",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ddryo-loos-300829",
+      "post": "https://x.com/ddryo_loos/status/2105824736072925621",
+      "reference": "motions/lism-css-10-release-video/reference.mp4",
+      "path": "motions/lism-css-10-release-video/MOTION.md"
+    },
+    {
+      "name": "litellm-promo-reel",
+      "title": "LiteLLM promo reel",
+      "tags": [
+        "Diagrams",
+        "Music",
+        "Code"
+      ],
+      "author": "Misbah Syed",
+      "handle": "@MisbahSy",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/misbahsy-80eaec",
+      "post": "https://x.com/MisbahSy/status/2103831201114882277",
+      "reference": "motions/litellm-promo-reel/reference.mp4",
+      "path": "motions/litellm-promo-reel/MOTION.md"
+    },
+    {
+      "name": "mascot-referral-program-promo",
+      "title": "Mascot referral program promo",
+      "tags": [
+        "Product UI",
+        "Characters"
+      ],
+      "author": "Paulo",
+      "handle": "@paulo_kombucha",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/paulo-kombucha-96431c",
+      "post": "https://x.com/paulo_kombucha/status/2104481235028283883",
+      "reference": "motions/mascot-referral-program-promo/reference.mp4",
+      "path": "motions/mascot-referral-program-promo/MOTION.md"
+    },
+    {
+      "name": "mathematics-motion-showreel",
+      "title": "Mathematics motion showreel",
+      "tags": [
+        "Charts",
+        "Diagrams"
+      ],
+      "author": "Math Files",
+      "handle": "@Math_files",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/math-files-39c9d0",
+      "post": "https://x.com/Math_files/status/2104486181853610052",
+      "reference": "motions/mathematics-motion-showreel/reference.mp4",
+      "path": "motions/mathematics-motion-showreel/MOTION.md"
+    },
+    {
+      "name": "matra-caption-app-promo",
+      "title": "Matra caption app promo",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Photos"
+      ],
+      "author": "Gautam \ud83e\ude81",
+      "handle": "@gautam_mer1",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/gautam-mer1-2ae354",
+      "post": "https://x.com/gautam_mer1/status/2103703336780530003",
+      "reference": "motions/matra-caption-app-promo/reference.mp4",
+      "path": "motions/matra-caption-app-promo/MOTION.md"
+    },
+    {
+      "name": "mdfordev-product-intro-video",
+      "title": "mdfor.dev product intro video",
+      "tags": [
+        "Product UI",
+        "Code"
+      ],
+      "author": "Ihab Khattab",
+      "handle": "@HO_BA",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ho-ba-f3f0e9",
+      "post": "https://x.com/HO_BA/status/2103845264649761062",
+      "reference": "motions/mdfordev-product-intro-video/reference.mp4",
+      "path": "motions/mdfordev-product-intro-video/MOTION.md"
+    },
+    {
+      "name": "moroccan-political-history-timeline",
+      "title": "Moroccan political history timeline",
+      "tags": [
+        "Charts",
+        "Kinetic type"
+      ],
+      "author": "Trig-lycee",
+      "handle": "@TrigLyceee",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/triglyceee-bd5b08",
+      "post": "https://x.com/TrigLyceee/status/2103804459986161719",
+      "reference": "motions/moroccan-political-history-timeline/reference.mp4",
+      "path": "motions/moroccan-political-history-timeline/MOTION.md"
+    },
+    {
+      "name": "morphing-ui-states-loop",
+      "title": "Morphing UI states loop",
+      "tags": [
+        "Product UI",
+        "Music"
+      ],
+      "author": "demon",
+      "handle": "@demonugc",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/demonugc-4c5753",
+      "post": "https://x.com/demonugc/status/2103526713208525162",
+      "reference": "motions/morphing-ui-states-loop/reference.mp4",
+      "path": "motions/morphing-ui-states-loop/MOTION.md"
+    },
+    {
+      "name": "motion-design-principles-reel",
+      "title": "Motion design principles reel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Particles",
+        "Music"
+      ],
+      "author": "Tolgay H\u0131\u00e7k\u0131ran",
+      "handle": "@tolgayhickiran",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/tolgayhickiran-e90799",
+      "post": "https://x.com/tolgayhickiran/status/2103619422128935120",
+      "reference": "motions/motion-design-principles-reel/reference.mp4",
+      "path": "motions/motion-design-principles-reel/MOTION.md"
+    },
+    {
+      "name": "motion-design-showreel",
+      "title": "Motion design showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes"
+      ],
+      "author": "Samuel Spitz",
+      "handle": "@samuel_spitz",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/samuel-spitz-974923",
+      "post": "https://x.com/samuel_spitz/status/2103544855276503053",
+      "reference": "motions/motion-design-showreel/reference.mp4",
+      "path": "motions/motion-design-showreel/MOTION.md"
+    },
+    {
+      "name": "motion-design-showreel-safarkhanshuvo",
+      "title": "Motion design showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Particles"
+      ],
+      "author": "Safar khan shuvo",
+      "handle": "@safarkhanshuvo",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/safarkhanshuvo-ffd52d",
+      "post": "https://x.com/safarkhanshuvo/status/2103520091552059752",
+      "reference": "motions/motion-design-showreel-safarkhanshuvo/reference.mp4",
+      "path": "motions/motion-design-showreel-safarkhanshuvo/MOTION.md"
+    },
+    {
+      "name": "motion-designer-portrait-showreel",
+      "title": "Motion designer portrait showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Particles"
+      ],
+      "author": "Nayan",
+      "handle": "@ndhabarde11",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ndhabarde11-f155b4",
+      "post": "https://x.com/ndhabarde11/status/2103832593355686104",
+      "reference": "motions/motion-designer-portrait-showreel/reference.mp4",
+      "path": "motions/motion-designer-portrait-showreel/MOTION.md"
+    },
+    {
+      "name": "motion-designer-resume-reel",
+      "title": "Motion designer r\u00e9sum\u00e9 reel",
+      "tags": [
+        "Shapes",
+        "Particles"
+      ],
+      "author": "Raphael aubry",
+      "handle": "@RaphaelAubryy",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/raphaelaubryy-4b137e",
+      "post": "https://x.com/RaphaelAubryy/status/2103416909857190360",
+      "reference": "motions/motion-designer-resume-reel/reference.mp4",
+      "path": "motions/motion-designer-resume-reel/MOTION.md"
+    },
+    {
+      "name": "motion-designer-showreel",
+      "title": "Motion designer showreel",
+      "tags": [
+        "Diagrams",
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "Himanshu",
+      "handle": "@himanshutwtxs",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/himanshutwtxs-5f4b43",
+      "post": "https://x.com/himanshutwtxs/status/2103495232637882858",
+      "reference": "motions/motion-designer-showreel/reference.mp4",
+      "path": "motions/motion-designer-showreel/MOTION.md"
+    },
+    {
+      "name": "motion-designer-showreel-danilowm",
+      "title": "Motion designer showreel",
+      "tags": [
+        "Product UI",
+        "Charts",
+        "Kinetic type"
+      ],
+      "author": "Danilo Iannone \u2794 meupetpodeir",
+      "handle": "@danilowm",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/danilowm-d3720d",
+      "post": "https://x.com/danilowm/status/2103661844661412022",
+      "reference": "motions/motion-designer-showreel-danilowm/reference.mp4",
+      "path": "motions/motion-designer-showreel-danilowm/MOTION.md"
+    },
+    {
+      "name": "motion-designer-showreel-eyishazyer",
+      "title": "Motion designer showreel",
+      "tags": [
+        "Charts",
+        "Kinetic type",
+        "Shapes",
+        "Music"
+      ],
+      "author": "Eyisha Zyer",
+      "handle": "@eyishazyer",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/eyishazyer-af035b",
+      "post": "https://x.com/eyishazyer/status/2103816865852129686",
+      "reference": "motions/motion-designer-showreel-eyishazyer/reference.mp4",
+      "path": "motions/motion-designer-showreel-eyishazyer/MOTION.md"
+    },
+    {
+      "name": "motion-designer-showreel-hanifproduktif",
+      "title": "Motion designer showreel",
+      "tags": [
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "Hanif | AI For Productivity",
+      "handle": "@hanifproduktif",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/hanifproduktif-54bdee",
+      "post": "https://x.com/hanifproduktif/status/2103404901451829311",
+      "reference": "motions/motion-designer-showreel-hanifproduktif/reference.mp4",
+      "path": "motions/motion-designer-showreel-hanifproduktif/MOTION.md"
+    },
+    {
+      "name": "motion-designer-showreel-kangaroohere",
+      "title": "Motion designer showreel",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Charts",
+        "Kinetic type"
+      ],
+      "author": "Roo",
+      "handle": "@KangarooHere",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/kangaroohere-b10f8d",
+      "post": "https://x.com/KangarooHere/status/2103617278671818789",
+      "reference": "motions/motion-designer-showreel-kangaroohere/reference.mp4",
+      "path": "motions/motion-designer-showreel-kangaroohere/MOTION.md"
+    },
+    {
+      "name": "motion-designer-showreel-teslachartz",
+      "title": "Motion designer showreel",
+      "tags": [
+        "Diagrams",
+        "Kinetic type",
+        "Shapes"
+      ],
+      "author": "A guy called 'TeslaCharts'",
+      "handle": "@TeslaChartz",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/teslachartz-c58b32",
+      "post": "https://x.com/TeslaChartz/status/2103746486978887985",
+      "reference": "motions/motion-designer-showreel-teslachartz/reference.mp4",
+      "path": "motions/motion-designer-showreel-teslachartz/MOTION.md"
+    },
+    {
+      "name": "motion-designer-showreel-vanshwtfff",
+      "title": "Motion designer showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Particles"
+      ],
+      "author": "Vansh",
+      "handle": "@VanshWTFFF",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/vanshwtfff-db0466",
+      "post": "https://x.com/VanshWTFFF/status/2103644352794992798",
+      "reference": "motions/motion-designer-showreel-vanshwtfff/reference.mp4",
+      "path": "motions/motion-designer-showreel-vanshwtfff/MOTION.md"
+    },
+    {
+      "name": "motion-designer-showreel-zaqailo",
+      "title": "Motion designer showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Particles",
+        "Music"
+      ],
+      "author": "Oluwasubomi",
+      "handle": "@zaqailo",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/zaqailo-212ad3",
+      "post": "https://x.com/zaqailo/status/2103768009017835623",
+      "reference": "motions/motion-designer-showreel-zaqailo/reference.mp4",
+      "path": "motions/motion-designer-showreel-zaqailo/MOTION.md"
+    },
+    {
+      "name": "motion-principles-showreel",
+      "title": "Motion principles showreel",
+      "tags": [
+        "Diagrams",
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "\u6478\u9c7c\u5de8\u5320\ud83d\udd28",
+      "handle": "@ChatGptAstra",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/chatgptastra-0d95c7",
+      "post": "https://x.com/ChatGptAstra/status/2103834787647807540",
+      "reference": "motions/motion-principles-showreel/reference.mp4",
+      "path": "motions/motion-principles-showreel/MOTION.md"
+    },
+    {
+      "name": "motion-techniques-showreel",
+      "title": "Motion techniques showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Particles"
+      ],
+      "author": "Luk\u00e1\u0161 Er\u0161il",
+      "handle": "@lukasersil",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/lukasersil-0ed38e",
+      "post": "https://x.com/lukasersil/status/2103742861971726495",
+      "reference": "motions/motion-techniques-showreel/reference.mp4",
+      "path": "motions/motion-techniques-showreel/MOTION.md"
+    },
+    {
+      "name": "motionsites-one-million-visitors",
+      "title": "MotionSites one million visitors",
+      "tags": [
+        "Product UI",
+        "Charts",
+        "Code"
+      ],
+      "author": "Viktor Oddy",
+      "handle": "@viktoroddy",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/viktoroddy-98c1d8",
+      "post": "https://x.com/viktoroddy/status/2103802280617402509",
+      "reference": "motions/motionsites-one-million-visitors/reference.mp4",
+      "path": "motions/motionsites-one-million-visitors/MOTION.md"
+    },
+    {
+      "name": "muse-connector-tracker-promo",
+      "title": "Muse connector tracker promo",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Elliot Garreffa",
+      "handle": "@elliot_garreffa",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/elliot-garreffa-f334bc",
+      "post": "https://x.com/elliot_garreffa/status/2104213514944446825",
+      "reference": "motions/muse-connector-tracker-promo/reference.mp4",
+      "path": "motions/muse-connector-tracker-promo/MOTION.md"
+    },
+    {
+      "name": "negroni-recipe-animation",
+      "title": "Negroni recipe animation",
+      "tags": [
+        "Diagrams"
+      ],
+      "author": "Rory Flynn",
+      "handle": "@Ror_Fly",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ror-fly-9950f1",
+      "post": "https://x.com/Ror_Fly/status/2102853258582880547",
+      "reference": "motions/negroni-recipe-animation/reference.mp4",
+      "path": "motions/negroni-recipe-animation/MOTION.md"
+    },
+    {
+      "name": "nohandslabs-brand-promo",
+      "title": "Nohandslabs brand promo",
+      "tags": [
+        "Kinetic type",
+        "Particles",
+        "Code"
+      ],
+      "author": "iamrobinvv",
+      "handle": "@robvjourney",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/robvjourney-ce3e1a",
+      "post": "https://x.com/robvjourney/status/2103768390322237474",
+      "reference": "motions/nohandslabs-brand-promo/reference.mp4",
+      "path": "motions/nohandslabs-brand-promo/MOTION.md"
+    },
+    {
+      "name": "norilu-product-launch-video",
+      "title": "Norilu product launch video",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Sacha Arbonel",
+      "handle": "@sachaarbonel",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/sachaarbonel-8f14f4",
+      "post": "https://x.com/sachaarbonel/status/2103614797501673648",
+      "reference": "motions/norilu-product-launch-video/reference.mp4",
+      "path": "motions/norilu-product-launch-video/MOTION.md"
+    },
+    {
+      "name": "ocrx-app-launch-video",
+      "title": "ocrX app launch video",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Mehul Kanzariya",
+      "handle": "@mehul4795",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/mehul4795-4a7007",
+      "post": "https://x.com/mehul4795/status/2103420457110417532",
+      "reference": "motions/ocrx-app-launch-video/reference.mp4",
+      "path": "motions/ocrx-app-launch-video/MOTION.md"
+    },
+    {
+      "name": "odatano-cardano-hype-edit",
+      "title": "ODATANO Cardano hype edit",
+      "tags": [
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "M\u20b3X",
+      "handle": "@maxalexweber",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/maxalexweber-67688b",
+      "post": "https://x.com/maxalexweber/status/2103118009535459784",
+      "reference": "motions/odatano-cardano-hype-edit/reference.mp4",
+      "path": "motions/odatano-cardano-hype-edit/MOTION.md"
+    },
+    {
+      "name": "ondefica-app-motion-reel",
+      "title": "Ondefica app motion reel",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Charts",
+        "Kinetic type"
+      ],
+      "author": "Jess",
+      "handle": "@jesscaroline7",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/jesscaroline7-1ff7cb",
+      "post": "https://x.com/jesscaroline7/status/2104336637752955094",
+      "reference": "motions/ondefica-app-motion-reel/reference.mp4",
+      "path": "motions/ondefica-app-motion-reel/MOTION.md"
+    },
+    {
+      "name": "ora-2-image-model-launch-film",
+      "title": "Ora 2 image model launch film",
+      "tags": [
+        "Product UI",
+        "Photos",
+        "Music"
+      ],
+      "author": "testarossa",
+      "handle": "@rossaxbt",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/rossaxbt-3085b7",
+      "post": "https://x.com/rossaxbt/status/2107845961691091295",
+      "reference": "motions/ora-2-image-model-launch-film/reference.mp4",
+      "path": "motions/ora-2-image-model-launch-film/MOTION.md"
+    },
+    {
+      "name": "orange-dot-motion-system",
+      "title": "Orange dot motion system",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Music"
+      ],
+      "author": "ultima",
+      "handle": "@ultimaxbt",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ultimaxbt-bbebf5",
+      "post": "https://x.com/ultimaxbt/status/2107486052550062398",
+      "reference": "motions/orange-dot-motion-system/reference.mp4",
+      "path": "motions/orange-dot-motion-system/MOTION.md"
+    },
+    {
+      "name": "org2html-product-showreel",
+      "title": "org2html product showreel",
+      "tags": [
+        "Product UI",
+        "Code"
+      ],
+      "author": "Cristian D. Moreno - \u4eac",
+      "handle": "@kyonax_on_tech",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/kyonax-on-tech-aabc1d",
+      "post": "https://x.com/kyonax_on_tech/status/2103482598144049316",
+      "reference": "motions/org2html-product-showreel/reference.mp4",
+      "path": "motions/org2html-product-showreel/MOTION.md"
+    },
+    {
+      "name": "oscilloscope-style-studio-motion-graphic",
+      "title": "Oscilloscope-style studio motion graphic",
+      "tags": [
+        "Charts",
+        "Kinetic type"
+      ],
+      "author": "Rneayan_Official",
+      "handle": "@rneayan",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/rneayan-ea6129",
+      "post": "https://x.com/rneayan/status/2103401461837406275",
+      "reference": "motions/oscilloscope-style-studio-motion-graphic/reference.mp4",
+      "path": "motions/oscilloscope-style-studio-motion-graphic/MOTION.md"
+    },
+    {
+      "name": "overthinking-motion-study",
+      "title": "Overthinking motion study",
+      "tags": [
+        "Kinetic type"
+      ],
+      "author": "Gizem Akdag",
+      "handle": "@gizakdag",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/gizakdag-cf4ae6",
+      "post": "https://x.com/gizakdag/status/2103566030916239768",
+      "reference": "motions/overthinking-motion-study/reference.mp4",
+      "path": "motions/overthinking-motion-study/MOTION.md"
+    },
+    {
+      "name": "paper-style-product-launch-film",
+      "title": "Paper-style product launch film",
+      "tags": [
+        "Charts",
+        "Diagrams",
+        "Music"
+      ],
+      "author": "Ittehadul Karim",
+      "handle": "@ik_builds",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ik-builds-b8bdcf",
+      "post": "https://x.com/ik_builds/status/2103890476885585923",
+      "reference": "motions/paper-style-product-launch-film/reference.mp4",
+      "path": "motions/paper-style-product-launch-film/MOTION.md"
+    },
+    {
+      "name": "parenting-app-hype-video",
+      "title": "Parenting app hype video",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Kinetic type"
+      ],
+      "author": "Franco Valdes",
+      "handle": "@francoxavier33",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/francoxavier33-d2dfd2",
+      "post": "https://x.com/francoxavier33/status/2103486218323341663",
+      "reference": "motions/parenting-app-hype-video/reference.mp4",
+      "path": "motions/parenting-app-hype-video/MOTION.md"
+    },
+    {
+      "name": "particle-sphere-motion-reel",
+      "title": "Particle sphere motion reel",
+      "tags": [
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "Blue \ud83d\udc08\u200d\u2b1b ArcX Farmooor",
+      "handle": "@blue_clarity",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/blue-clarity-ef56d0",
+      "post": "https://x.com/blue_clarity/status/2103564589065449603",
+      "reference": "motions/particle-sphere-motion-reel/reference.mp4",
+      "path": "motions/particle-sphere-motion-reel/MOTION.md"
+    },
+    {
+      "name": "pelican-riding-a-bicycle",
+      "title": "Pelican riding a bicycle",
+      "tags": [
+        "Characters"
+      ],
+      "author": "Axton",
+      "handle": "@AxtonLiu",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/axtonliu-0b861d",
+      "post": "https://x.com/AxtonLiu/status/2103119648271290566",
+      "reference": "motions/pelican-riding-a-bicycle/reference.mp4",
+      "path": "motions/pelican-riding-a-bicycle/MOTION.md"
+    },
+    {
+      "name": "personal-research-intro-reel",
+      "title": "Personal research intro reel",
+      "tags": [
+        "Kinetic type",
+        "Particles",
+        "Code"
+      ],
+      "author": "Madhav",
+      "handle": "@Madhav_XO",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/madhav-xo-f97f20",
+      "post": "https://x.com/Madhav_XO/status/2103605007396524440",
+      "reference": "motions/personal-research-intro-reel/reference.mp4",
+      "path": "motions/personal-research-intro-reel/MOTION.md"
+    },
+    {
+      "name": "personal-skills-showreel",
+      "title": "Personal skills showreel",
+      "tags": [
+        "Product UI",
+        "Particles",
+        "Characters"
+      ],
+      "author": "Ibrahim Wasim",
+      "handle": "@ibrahimwasim240",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/ibrahimwasim240-809370",
+      "post": "https://x.com/ibrahimwasim240/status/2103943233432940763",
+      "reference": "motions/personal-skills-showreel/reference.mp4",
+      "path": "motions/personal-skills-showreel/MOTION.md"
+    },
+    {
+      "name": "photo-print-app-launch-film",
+      "title": "Photo print app launch film",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Photos",
+        "Music"
+      ],
+      "author": "zero",
+      "handle": "@twoclipping",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/twoclipping-221cab",
+      "post": "https://x.com/twoclipping/status/2103835273813496100",
+      "reference": "motions/photo-print-app-launch-film/reference.mp4",
+      "path": "motions/photo-print-app-launch-film/MOTION.md"
+    },
+    {
+      "name": "photo-retouch-app-promo",
+      "title": "Photo retouch app promo",
+      "tags": [
+        "Product UI",
+        "Photos"
+      ],
+      "author": "Oli ahmed",
+      "handle": "@oliahmed205",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/oliahmed205-3e31c4",
+      "post": "https://x.com/oliahmed205/status/2104679078465069378",
+      "reference": "motions/photo-retouch-app-promo/reference.mp4",
+      "path": "motions/photo-retouch-app-promo/MOTION.md"
+    },
+    {
+      "name": "photon-journey-from-the-sun",
+      "title": "Photon journey from the Sun",
+      "tags": [
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "Apoorv Jain",
+      "handle": "@apoorvjain25",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/apoorvjain25-d24184",
+      "post": "https://x.com/apoorvjain25/status/2104818940467945542",
+      "reference": "motions/photon-journey-from-the-sun/reference.mp4",
+      "path": "motions/photon-journey-from-the-sun/MOTION.md"
+    },
+    {
+      "name": "pictwin-ai-app-ad",
+      "title": "PicTwin AI app ad",
+      "tags": [
+        "Product UI",
+        "Photos"
+      ],
+      "author": "Josip",
+      "handle": "@l3d1c",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/l3d1c-0e35a3",
+      "post": "https://x.com/l3d1c/status/2103536553930752011",
+      "reference": "motions/pictwin-ai-app-ad/reference.mp4",
+      "path": "motions/pictwin-ai-app-ad/MOTION.md"
+    },
+    {
+      "name": "pixel-art-card-battle-game",
+      "title": "Pixel art card battle game",
+      "tags": [
+        "Characters"
+      ],
+      "author": "AiSongMan\uff5cAI Workflow Lab",
+      "handle": "@aisongman",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/aisongman-71ffac",
+      "post": "https://x.com/aisongman/status/2103763192971461057",
+      "reference": "motions/pixel-art-card-battle-game/reference.mp4",
+      "path": "motions/pixel-art-card-battle-game/MOTION.md"
+    },
+    {
+      "name": "pixel-art-llm-history",
+      "title": "Pixel art LLM history",
+      "tags": [
+        "Diagrams",
+        "Characters"
+      ],
+      "author": "Plugin Play",
+      "handle": "@PluginPlay__",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/pluginplay-3d4006",
+      "post": "https://x.com/PluginPlay__/status/2103910844677472343",
+      "reference": "motions/pixel-art-llm-history/reference.mp4",
+      "path": "motions/pixel-art-llm-history/MOTION.md"
+    },
+    {
+      "name": "pixel-wizard-crypto-animation",
+      "title": "Pixel wizard crypto animation",
+      "tags": [
+        "Characters"
+      ],
+      "author": "Evinho",
+      "handle": "@0xEvinho",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/0xevinho-3777d8",
+      "post": "https://x.com/0xEvinho/status/2103212966703436195",
+      "reference": "motions/pixel-wizard-crypto-animation/reference.mp4",
+      "path": "motions/pixel-wizard-crypto-animation/MOTION.md"
+    },
+    {
+      "name": "pixelup-labs-studio-showreel",
+      "title": "Pixelup Labs studio showreel",
+      "tags": [
+        "Product UI",
+        "Photos"
+      ],
+      "author": "Arjun Sharma",
+      "handle": "@arjunsh1607",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/arjunsh1607-93005d",
+      "post": "https://x.com/arjunsh1607/status/2104295133432922126",
+      "reference": "motions/pixelup-labs-studio-showreel/reference.mp4",
+      "path": "motions/pixelup-labs-studio-showreel/MOTION.md"
+    },
+    {
+      "name": "porco-rosso-sunset-dogfight",
+      "title": "Porco Rosso sunset dogfight",
+      "tags": [],
+      "author": "SuSu_\u9165\u9165\ud83d\udc45",
+      "handle": "@NFT_Chen",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/nft-chen-5f8bb0",
+      "post": "https://x.com/NFT_Chen/status/2103882415299350878",
+      "reference": "motions/porco-rosso-sunset-dogfight/reference.mp4",
+      "path": "motions/porco-rosso-sunset-dogfight/MOTION.md"
+    },
+    {
+      "name": "portfolio-motion-reel",
+      "title": "Portfolio motion reel",
+      "tags": [
+        "Product UI",
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "Mallik Cheripally",
+      "handle": "@heyiammallik",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/heyiammallik-e72d17",
+      "post": "https://x.com/heyiammallik/status/2103837803587293397",
+      "reference": "motions/portfolio-motion-reel/reference.mp4",
+      "path": "motions/portfolio-motion-reel/MOTION.md"
+    },
+    {
+      "name": "poster-breaking-its-frame",
+      "title": "Poster breaking its frame",
+      "tags": [
+        "Kinetic type",
+        "Shapes",
+        "Music"
+      ],
+      "author": "Pankaj Kumar",
+      "handle": "@pankajkumar_dev",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/pankajkumar-dev-0bee87",
+      "post": "https://x.com/pankajkumar_dev/status/2103502614134718609",
+      "reference": "motions/poster-breaking-its-frame/reference.mp4",
+      "path": "motions/poster-breaking-its-frame/MOTION.md"
+    },
+    {
+      "name": "product-intro-synced-to-music",
+      "title": "Product intro synced to music",
+      "tags": [
+        "Product UI",
+        "Particles",
+        "Music"
+      ],
+      "author": "Bogdan Dragomir",
+      "handle": "@BogdanDragomir",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/bogdandragomir-35e024",
+      "post": "https://x.com/BogdanDragomir/status/2104045641538412658",
+      "reference": "motions/product-intro-synced-to-music/reference.mp4",
+      "path": "motions/product-intro-synced-to-music/MOTION.md"
+    },
+    {
+      "name": "prompt-motion-site-promo",
+      "title": "Prompt Motion site promo",
+      "tags": [
+        "Product UI",
+        "Music"
+      ],
+      "author": "Antonio Kodheli",
+      "handle": "@antonio_kodheli",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/antonio-kodheli-490109",
+      "post": "https://x.com/antonio_kodheli/status/2107518066615582893",
+      "reference": "motions/prompt-motion-site-promo/reference.mp4",
+      "path": "motions/prompt-motion-site-promo/MOTION.md"
+    },
+    {
+      "name": "prompting-mistakes-video-tutorial",
+      "title": "Prompting mistakes video tutorial",
+      "tags": [
+        "Diagrams"
+      ],
+      "author": "\ud835\ude91\ud835\ude8e\ud835\ude97\ud835\ude94 \ud835\ude9f\ud835\ude8a\ud835\ude97 \ud835\ude8e\ud835\ude9c\ud835\ude9c",
+      "handle": "@henkvaness",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/henkvaness-0e06af",
+      "post": "https://x.com/henkvaness/status/2103801351993975279",
+      "reference": "motions/prompting-mistakes-video-tutorial/reference.mp4",
+      "path": "motions/prompting-mistakes-video-tutorial/MOTION.md"
+    },
+    {
+      "name": "psychedelic-hypnotic-eye-showreel",
+      "title": "Psychedelic hypnotic eye showreel",
+      "tags": [
+        "Shapes"
+      ],
+      "author": "monokern",
+      "handle": "@monokern",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/monokern-ade5b6",
+      "post": "https://x.com/monokern/status/2103563538828832979",
+      "reference": "motions/psychedelic-hypnotic-eye-showreel/reference.mp4",
+      "path": "motions/psychedelic-hypnotic-eye-showreel/MOTION.md"
+    },
+    {
+      "name": "quetzal-social-app-reel",
+      "title": "Quetzal social app reel",
+      "tags": [
+        "Product UI",
+        "Photos"
+      ],
+      "author": "Sergio Verdugo",
+      "handle": "@miskinho_",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/miskinho-443898",
+      "post": "https://x.com/miskinho_/status/2103847584531956105",
+      "reference": "motions/quetzal-social-app-reel/reference.mp4",
+      "path": "motions/quetzal-social-app-reel/MOTION.md"
+    },
+    {
+      "name": "quickdesign-brand-promo",
+      "title": "QuickDesign brand promo",
+      "tags": [
+        "Product UI",
+        "Kinetic type",
+        "Music"
+      ],
+      "author": "QuickDesign",
+      "handle": "@quickdesignio",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/quickdesignio-dd93d0",
+      "post": "https://x.com/quickdesignio/status/2103617779857338399",
+      "reference": "motions/quickdesign-brand-promo/reference.mp4",
+      "path": "motions/quickdesign-brand-promo/MOTION.md"
+    },
+    {
+      "name": "realtime-3d",
+      "title": "The 3D template",
+      "tags": [],
+      "author": null,
+      "handle": null,
+      "model": null,
+      "source": "https://prompt-motion.com/templates/realtime",
+      "post": null,
+      "reference": "motions/realtime-3d/reference.webp",
+      "path": "motions/realtime-3d/MOTION.md"
+    },
+    {
+      "name": "recipe-brand-20th-anniversary",
+      "title": "Recipe brand 20th anniversary",
+      "tags": [
+        "Particles"
+      ],
+      "author": "Uncle Dave (aka deebeeeff): The Dreamwalkers",
+      "handle": "@deebeeeff",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/deebeeeff-50fcd0",
+      "post": "https://x.com/deebeeeff/status/2104952364365234301",
+      "reference": "motions/recipe-brand-20th-anniversary/reference.mp4",
+      "path": "motions/recipe-brand-20th-anniversary/MOTION.md"
+    },
+    {
+      "name": "recruiter-self-intro-reel",
+      "title": "Recruiter self-intro reel",
+      "tags": [
+        "Charts",
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "Anmol Sethi",
+      "handle": "@blushpetal795",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/blushpetal795-0c85c2",
+      "post": "https://x.com/blushpetal795/status/2103744870041170220",
+      "reference": "motions/recruiter-self-intro-reel/reference.mp4",
+      "path": "motions/recruiter-self-intro-reel/MOTION.md"
+    },
+    {
+      "name": "recursion-explained-in-genres",
+      "title": "Recursion explained in genres",
+      "tags": [
+        "Characters",
+        "Code"
+      ],
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/emollick-8661a8",
+      "post": "https://x.com/emollick/status/2103688362960019567",
+      "reference": "motions/recursion-explained-in-genres/reference.mp4",
+      "path": "motions/recursion-explained-in-genres/MOTION.md"
+    },
+    {
+      "name": "reddit-marketing-tool-launch-video",
+      "title": "Reddit marketing tool launch video",
+      "tags": [
+        "Product UI",
+        "Characters"
+      ],
+      "author": "Anthony Riera",
+      "handle": "@anthonyriera",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/anthonyriera-9b1b2a",
+      "post": "https://x.com/anthonyriera/status/2103784508860305566",
+      "reference": "motions/reddit-marketing-tool-launch-video/reference.mp4",
+      "path": "motions/reddit-marketing-tool-launch-video/MOTION.md"
+    },
+    {
+      "name": "reflex-brand-motion-reel",
+      "title": "Reflex brand motion reel",
+      "tags": [
+        "Kinetic type",
+        "Music"
+      ],
+      "author": "Reflex",
+      "handle": "@reflex_cloud",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/reflex-cloud-72ffe5",
+      "post": "https://x.com/reflex_cloud/status/2103552840027304046",
+      "reference": "motions/reflex-brand-motion-reel/reference.mp4",
+      "path": "motions/reflex-brand-motion-reel/MOTION.md"
+    },
+    {
+      "name": "ren-app-launch-video",
+      "title": "Ren app launch video",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Charts"
+      ],
+      "author": "Josh",
+      "handle": "@macrohou",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/macrohou-33959d",
+      "post": "https://x.com/macrohou/status/2103545787875733862",
+      "reference": "motions/ren-app-launch-video/reference.mp4",
+      "path": "motions/ren-app-launch-video/MOTION.md"
+    },
+    {
+      "name": "replica-symmetry-breaking-whiteboard",
+      "title": "Replica symmetry breaking whiteboard",
+      "tags": [
+        "Diagrams"
+      ],
+      "author": "Dersu",
+      "handle": "@tak3sh8",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/tak3sh8-be5012",
+      "post": "https://x.com/tak3sh8/status/2103667481139441895",
+      "reference": "motions/replica-symmetry-breaking-whiteboard/reference.mp4",
+      "path": "motions/replica-symmetry-breaking-whiteboard/MOTION.md"
+    },
+    {
+      "name": "risograph-studio-intro",
+      "title": "Risograph studio intro",
+      "tags": [
+        "Diagrams",
+        "Kinetic type"
+      ],
+      "author": "Rneayan_Official",
+      "handle": "@rneayan",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/rneayan-474bcf",
+      "post": "https://x.com/rneayan/status/2103401006281441493",
+      "reference": "motions/risograph-studio-intro/reference.mp4",
+      "path": "motions/risograph-studio-intro/MOTION.md"
+    },
+    {
+      "name": "saas-launch-video",
+      "title": "SaaS launch video",
+      "tags": [
+        "Product UI",
+        "Music"
+      ],
+      "author": "Axel Schapmann",
+      "handle": "@aschapmann",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/aschapmann-131210",
+      "post": "https://x.com/aschapmann/status/2104230888812724497",
+      "reference": "motions/saas-launch-video/reference.mp4",
+      "path": "motions/saas-launch-video/MOTION.md"
+    },
+    {
+      "name": "saas-product-launch-video",
+      "title": "SaaS product launch video",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Alexandre",
+      "handle": "@xelandre__",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/xelandre-363f00",
+      "post": "https://x.com/xelandre__/status/2103473030160687413",
+      "reference": "motions/saas-product-launch-video/reference.mp4",
+      "path": "motions/saas-product-launch-video/MOTION.md"
+    },
+    {
+      "name": "sahi-trading-terminal-reveal",
+      "title": "Sahi trading terminal reveal",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Charts",
+        "Particles"
+      ],
+      "author": "Dale Vaz",
+      "handle": "@dale_vaz",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/dale-vaz-cc612a",
+      "post": "https://x.com/dale_vaz/status/2103290592679879074",
+      "reference": "motions/sahi-trading-terminal-reveal/reference.mp4",
+      "path": "motions/sahi-trading-terminal-reveal/MOTION.md"
+    },
+    {
+      "name": "scrabble-tile-character-story",
+      "title": "Scrabble tile character story",
+      "tags": [
+        "Characters"
+      ],
+      "author": "Anil Rao K",
+      "handle": "@Anilraok",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/anilraok-eff262",
+      "post": "https://x.com/Anilraok/status/2103087766662009118",
+      "reference": "motions/scrabble-tile-character-story/reference.mp4",
+      "path": "motions/scrabble-tile-character-story/MOTION.md"
+    },
+    {
+      "name": "second-brain-service-promo",
+      "title": "Second brain service promo",
+      "tags": [
+        "Product UI",
+        "Code"
+      ],
+      "author": "Adam Sandler",
+      "handle": "@TheViableEdge",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/theviableedge-9065be",
+      "post": "https://x.com/TheViableEdge/status/2104207707980869918",
+      "reference": "motions/second-brain-service-promo/reference.mp4",
+      "path": "motions/second-brain-service-promo/MOTION.md"
+    },
+    {
+      "name": "shadow-theatre-home-story",
+      "title": "Shadow theatre home story",
+      "tags": [
+        "Characters"
+      ],
+      "author": "4b47",
+      "handle": "@x4b47x",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/x4b47x-9cc84f",
+      "post": "https://x.com/x4b47x/status/2103019799614034026",
+      "reference": "motions/shadow-theatre-home-story/reference.mp4",
+      "path": "motions/shadow-theatre-home-story/MOTION.md"
+    },
+    {
+      "name": "shape-morphing-through-ui-states",
+      "title": "Shape morphing through UI states",
+      "tags": [
+        "Product UI",
+        "Charts",
+        "Music"
+      ],
+      "author": "zero",
+      "handle": "@twoclipping",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/twoclipping-5cba86",
+      "post": "https://x.com/twoclipping/status/2103273003555402193",
+      "reference": "motions/shape-morphing-through-ui-states/reference.mp4",
+      "path": "motions/shape-morphing-through-ui-states/MOTION.md"
+    },
+    {
+      "name": "sherwood-agentic-hedge-fund-explainer",
+      "title": "Sherwood agentic hedge fund explainer",
+      "tags": [
+        "Product UI",
+        "Kinetic type",
+        "Photos"
+      ],
+      "author": "carlosbeltran.eth",
+      "handle": "@imthatcarlos",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/imthatcarlos-e04bfe",
+      "post": "https://x.com/imthatcarlos/status/2102849219388133592",
+      "reference": "motions/sherwood-agentic-hedge-fund-explainer/reference.mp4",
+      "path": "motions/sherwood-agentic-hedge-fund-explainer/MOTION.md"
+    },
+    {
+      "name": "shin-majin-shiki-promo",
+      "title": "Shin Majin-shiki promo",
+      "tags": [
+        "Kinetic type"
+      ],
+      "author": "\u307e\u3058\u3093",
+      "handle": "@Majin_AppSheet",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/majin-appsheet-2d3c1a",
+      "post": "https://x.com/Majin_AppSheet/status/2103497319899693327",
+      "reference": "motions/shin-majin-shiki-promo/reference.mp4",
+      "path": "motions/shin-majin-shiki-promo/MOTION.md"
+    },
+    {
+      "name": "shop-chatbot-mascot-promo",
+      "title": "Shop chatbot mascot promo",
+      "tags": [
+        "Characters"
+      ],
+      "author": "anas",
+      "handle": "@anas0ra",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/anas0ra-e57aea",
+      "post": "https://x.com/anas0ra/status/2103490331815952637",
+      "reference": "motions/shop-chatbot-mascot-promo/reference.mp4",
+      "path": "motions/shop-chatbot-mascot-promo/MOTION.md"
+    },
+    {
+      "name": "showreel",
+      "title": "The showreel prompt",
+      "tags": [],
+      "author": null,
+      "handle": null,
+      "model": null,
+      "source": "https://prompt-motion.com/templates/showreel",
+      "post": null,
+      "reference": "motions/showreel/reference.webp",
+      "path": "motions/showreel/MOTION.md"
+    },
+    {
+      "name": "sketchbook-animals-come-alive",
+      "title": "Sketchbook animals come alive",
+      "tags": [
+        "Characters"
+      ],
+      "author": "Abderrahmen Gharsallah",
+      "handle": "@abderrahmen_g",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/abderrahmen-g-9e8ed0",
+      "post": "https://x.com/abderrahmen_g/status/2103103836541899031",
+      "reference": "motions/sketchbook-animals-come-alive/reference.mp4",
+      "path": "motions/sketchbook-animals-come-alive/MOTION.md"
+    },
+    {
+      "name": "sotto-reading-app-explainer",
+      "title": "Sotto reading app explainer",
+      "tags": [
+        "Product UI",
+        "Phone"
+      ],
+      "author": "@1stnoel_",
+      "handle": "@1stnoel_",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/1stnoel-c20a89",
+      "post": "https://x.com/1stnoel_/status/2103247530259603851",
+      "reference": "motions/sotto-reading-app-explainer/reference.mp4",
+      "path": "motions/sotto-reading-app-explainer/MOTION.md"
+    },
+    {
+      "name": "speech-built-as-architecture",
+      "title": "Speech built as architecture",
+      "tags": [
+        "Kinetic type"
+      ],
+      "author": "Gadgetify",
+      "handle": "@Gdgtify",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/gdgtify-287ddf",
+      "post": "https://x.com/Gdgtify/status/2103458245213929495",
+      "reference": "motions/speech-built-as-architecture/reference.mp4",
+      "path": "motions/speech-built-as-architecture/MOTION.md"
+    },
+    {
+      "name": "spotify-product-film",
+      "title": "Spotify product film",
+      "tags": [
+        "Product UI",
+        "Music"
+      ],
+      "author": "Brain",
+      "handle": "@brainextends",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/brainextends-e19ac3",
+      "post": "https://x.com/brainextends/status/2103801834930606193",
+      "reference": "motions/spotify-product-film/reference.mp4",
+      "path": "motions/spotify-product-film/MOTION.md"
+    },
+    {
+      "name": "starry-night-cat-spotting-game",
+      "title": "Starry Night cat-spotting game",
+      "tags": [
+        "Characters"
+      ],
+      "author": "Christian Moss",
+      "handle": "@MandelDuck",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/mandelduck-95fd08",
+      "post": "https://x.com/MandelDuck/status/2103802923465768972",
+      "reference": "motions/starry-night-cat-spotting-game/reference.mp4",
+      "path": "motions/starry-night-cat-spotting-game/MOTION.md"
+    },
+    {
+      "name": "steam-new-releases-news-recap",
+      "title": "Steam new releases news recap",
+      "tags": [
+        "Charts"
+      ],
+      "author": "\u30ae\u30ac\u30d3\u30c3\u30c8@\u30b2\u30fc\u30e0\u3064\u304f\u308b\u3072\u3068",
+      "handle": "@gigabit_million",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/gigabit-million-16b3a0",
+      "post": "https://x.com/gigabit_million/status/2104068536041959719",
+      "reference": "motions/steam-new-releases-news-recap/reference.mp4",
+      "path": "motions/steam-new-releases-news-recap/MOTION.md"
+    },
+    {
+      "name": "step-race-app-promo",
+      "title": "Step race app promo",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Mark Hinschberger",
+      "handle": "@marklaunches",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/marklaunches-3b9492",
+      "post": "https://x.com/marklaunches/status/2103811146411041046",
+      "reference": "motions/step-race-app-promo/reference.mp4",
+      "path": "motions/step-race-app-promo/MOTION.md"
+    },
+    {
+      "name": "stock-analysis-app-promo",
+      "title": "Stock analysis app promo",
+      "tags": [
+        "Product UI",
+        "Charts"
+      ],
+      "author": "Hardik Shah",
+      "handle": "@AIStockSavvy",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/aistocksavvy-3fb9f5",
+      "post": "https://x.com/AIStockSavvy/status/2103482258774483320",
+      "reference": "motions/stock-analysis-app-promo/reference.mp4",
+      "path": "motions/stock-analysis-app-promo/MOTION.md"
+    },
+    {
+      "name": "studio-website-showreel",
+      "title": "Studio website showreel",
+      "tags": [
+        "Product UI",
+        "Photos"
+      ],
+      "author": "Andr\u00e9 Ginja \ud83d\udd3a",
+      "handle": "@andginja",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/andginja-333d32",
+      "post": "https://x.com/andginja/status/2103492000733618685",
+      "reference": "motions/studio-website-showreel/reference.mp4",
+      "path": "motions/studio-website-showreel/MOTION.md"
+    },
+    {
+      "name": "studio1-intro-showreel",
+      "title": "Studio1 intro showreel",
+      "tags": [
+        "Charts",
+        "Kinetic type"
+      ],
+      "author": "Mr. \u00c5nand",
+      "handle": "@Astrodevil_",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/astrodevil-3f2054",
+      "post": "https://x.com/Astrodevil_/status/2103600734017392708",
+      "reference": "motions/studio1-intro-showreel/reference.mp4",
+      "path": "motions/studio1-intro-showreel/MOTION.md"
+    },
+    {
+      "name": "supademo-launch-video",
+      "title": "Supademo launch video",
+      "tags": [
+        "Product UI",
+        "Kinetic type",
+        "Music"
+      ],
+      "author": "Joseph Lee \ud83c\uddf0\ud83c\uddf7\ud83c\udde8\ud83c\udde6",
+      "handle": "@jhylee95",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/jhylee95-e1152f",
+      "post": "https://x.com/jhylee95/status/2103604431627452427",
+      "reference": "motions/supademo-launch-video/reference.mp4",
+      "path": "motions/supademo-launch-video/MOTION.md"
+    },
+    {
+      "name": "supasito-launch-video",
+      "title": "Supasito launch video",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "wozu",
+      "handle": "@wozu_co",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/wozu-co-242285",
+      "post": "https://x.com/wozu_co/status/2105662660779893062",
+      "reference": "motions/supasito-launch-video/reference.mp4",
+      "path": "motions/supasito-launch-video/MOTION.md"
+    },
+    {
+      "name": "superx-feature-release-teaser",
+      "title": "SuperX feature release teaser",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Rob Hallam",
+      "handle": "@robj3d3",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/robj3d3-b18fad",
+      "post": "https://x.com/robj3d3/status/2107040421989994822",
+      "reference": "motions/superx-feature-release-teaser/reference.mp4",
+      "path": "motions/superx-feature-release-teaser/MOTION.md"
+    },
+    {
+      "name": "sweetregret-app-update-reel",
+      "title": "sweetRegret app update reel",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Characters"
+      ],
+      "author": "Thilina Abeyrathna",
+      "handle": "@thilina_a",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/thilina-a-891c09",
+      "post": "https://x.com/thilina_a/status/2104455320424915273",
+      "reference": "motions/sweetregret-app-update-reel/reference.mp4",
+      "path": "motions/sweetregret-app-update-reel/MOTION.md"
+    },
+    {
+      "name": "swiss-style-motion-showreel",
+      "title": "Swiss-style motion showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes"
+      ],
+      "author": "Levan Abashidze",
+      "handle": "@levabashidze",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/levabashidze-2d713a",
+      "post": "https://x.com/levabashidze/status/2103786742520184909",
+      "reference": "motions/swiss-style-motion-showreel/reference.mp4",
+      "path": "motions/swiss-style-motion-showreel/MOTION.md"
+    },
+    {
+      "name": "synced-lyrics-motion-video",
+      "title": "Synced lyrics motion video",
+      "tags": [
+        "Kinetic type",
+        "Music"
+      ],
+      "author": "Sam Aoteman",
+      "handle": "@samaote",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/samaote-5e2fc2",
+      "post": "https://x.com/samaote/status/2103510974796124569",
+      "reference": "motions/synced-lyrics-motion-video/reference.mp4",
+      "path": "motions/synced-lyrics-motion-video/MOTION.md"
+    },
+    {
+      "name": "talking-head-clip-edit",
+      "title": "Talking-head clip edit",
+      "tags": [
+        "Photos"
+      ],
+      "author": "Sabba Keynejad",
+      "handle": "@sab8a",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/sab8a-364a5a",
+      "post": "https://x.com/sab8a/status/2103144778481475686",
+      "reference": "motions/talking-head-clip-edit/reference.mp4",
+      "path": "motions/talking-head-clip-edit/MOTION.md"
+    },
+    {
+      "name": "tally-product-demo",
+      "title": "Tally product demo",
+      "tags": [
+        "Product UI",
+        "Kinetic type"
+      ],
+      "author": "Vishesh Baghel",
+      "handle": "@VisheshBaghell",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/visheshbaghell-3aba37",
+      "post": "https://x.com/VisheshBaghell/status/2103772327146119508",
+      "reference": "motions/tally-product-demo/reference.mp4",
+      "path": "motions/tally-product-demo/MOTION.md"
+    },
+    {
+      "name": "tasteskill-dashboard-showcase",
+      "title": "TasteSkill dashboard showcase",
+      "tags": [
+        "Product UI",
+        "Charts"
+      ],
+      "author": "Leon Lin",
+      "handle": "@LexnLin",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/lexnlin-f9b3bd8",
+      "post": "https://x.com/LexnLin/status/2112674349132194185",
+      "reference": "motions/tasteskill-dashboard-showcase/reference.mp4",
+      "path": "motions/tasteskill-dashboard-showcase/MOTION.md"
+    },
+    {
+      "name": "taxtello-bookkeeping-app-film",
+      "title": "Taxtello bookkeeping app film",
+      "tags": [
+        "Product UI",
+        "Charts"
+      ],
+      "author": "Daniel Haida",
+      "handle": "@daniel_haida",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/daniel-haida-8691d4",
+      "post": "https://x.com/daniel_haida/status/2104139720829636937",
+      "reference": "motions/taxtello-bookkeeping-app-film/reference.mp4",
+      "path": "motions/taxtello-bookkeeping-app-film/MOTION.md"
+    },
+    {
+      "name": "tengwang-pavilion-moonlit-river",
+      "title": "Tengwang Pavilion moonlit river",
+      "tags": [],
+      "author": "geekzen",
+      "handle": "@DemitiyaGeekzen",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/demitiyageekzen-7770ad",
+      "post": "https://x.com/DemitiyaGeekzen/status/2103517910274818523",
+      "reference": "motions/tengwang-pavilion-moonlit-river/reference.mp4",
+      "path": "motions/tengwang-pavilion-moonlit-river/MOTION.md"
+    },
+    {
+      "name": "tennis-game-launch-video",
+      "title": "Tennis game launch video",
+      "tags": [
+        "Product UI",
+        "Phone"
+      ],
+      "author": "Vlad",
+      "handle": "@deifosv",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/deifosv-04e4d3",
+      "post": "https://x.com/deifosv/status/2103197522382786581",
+      "reference": "motions/tennis-game-launch-video/reference.mp4",
+      "path": "motions/tennis-game-launch-video/MOTION.md"
+    },
+    {
+      "name": "tented-image-gen-product-video",
+      "title": "Tented image gen product video",
+      "tags": [
+        "Product UI",
+        "Photos"
+      ],
+      "author": "Justin Cooperman",
+      "handle": "@justincooperman",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/justincooperman-e7bbc4",
+      "post": "https://x.com/justincooperman/status/2103201167367188876",
+      "reference": "motions/tented-image-gen-product-video/reference.mp4",
+      "path": "motions/tented-image-gen-product-video/MOTION.md"
+    },
+    {
+      "name": "the-last-light-animated-short",
+      "title": "The Last Light animated short",
+      "tags": [
+        "Characters"
+      ],
+      "author": "Farouk Alogba",
+      "handle": "@faroukzy",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/faroukzy-9ff23e",
+      "post": "https://x.com/faroukzy/status/2103387771180138551",
+      "reference": "motions/the-last-light-animated-short/reference.mp4",
+      "path": "motions/the-last-light-animated-short/MOTION.md"
+    },
+    {
+      "name": "threejs-skyraider-aircraft-model",
+      "title": "Three.js Skyraider aircraft model",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Build Fast with AI",
+      "handle": "@BuildFastWithAI",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/buildfastwithai-ed9447",
+      "post": "https://x.com/BuildFastWithAI/status/2103152898708582551",
+      "reference": "motions/threejs-skyraider-aircraft-model/reference.mp4",
+      "path": "motions/threejs-skyraider-aircraft-model/MOTION.md"
+    },
+    {
+      "name": "token-bucket-rate-limiter",
+      "title": "Token bucket rate limiter",
+      "tags": [
+        "Charts",
+        "Diagrams"
+      ],
+      "author": "Parker Rex",
+      "handle": "@ParkerRex",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/parkerrex-1a54fe",
+      "post": "https://x.com/ParkerRex/status/2103206747846701462",
+      "reference": "motions/token-bucket-rate-limiter/reference.mp4",
+      "path": "motions/token-bucket-rate-limiter/MOTION.md"
+    },
+    {
+      "name": "travel-visa-service-promo",
+      "title": "Travel visa service promo",
+      "tags": [
+        "Product UI",
+        "Kinetic type",
+        "Photos"
+      ],
+      "author": "THISMA",
+      "handle": "@thismacapital",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/thismacapital-dfba20",
+      "post": "https://x.com/thismacapital/status/2103773635714375808",
+      "reference": "motions/travel-visa-service-promo/reference.mp4",
+      "path": "motions/travel-visa-service-promo/MOTION.md"
+    },
+    {
+      "name": "trezio-app-motion-reel",
+      "title": "Trezio app motion reel",
+      "tags": [
+        "Product UI",
+        "Kinetic type"
+      ],
+      "author": "Agon Aliu",
+      "handle": "@agonaliu_",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/agonaliu-466a8f",
+      "post": "https://x.com/agonaliu_/status/2104117465475326227",
+      "reference": "motions/trezio-app-motion-reel/reference.mp4",
+      "path": "motions/trezio-app-motion-reel/MOTION.md"
+    },
+    {
+      "name": "type-form-space-showreel",
+      "title": "Type, form, space showreel",
+      "tags": [
+        "Kinetic type",
+        "Shapes"
+      ],
+      "author": "Web3 Wesley",
+      "handle": "@Web3Wesley",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/web3wesley-7bb108",
+      "post": "https://x.com/Web3Wesley/status/2103644329294365164",
+      "reference": "motions/type-form-space-showreel/reference.mp4",
+      "path": "motions/type-form-space-showreel/MOTION.md"
+    },
+    {
+      "name": "typingmind-logo-reveal",
+      "title": "TypingMind logo reveal",
+      "tags": [
+        "Shapes"
+      ],
+      "author": "Tony Dinh",
+      "handle": "@tdinh_me",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/tdinh-me-815acb",
+      "post": "https://x.com/tdinh_me/status/2103704250329301409",
+      "reference": "motions/typingmind-logo-reveal/reference.mp4",
+      "path": "motions/typingmind-logo-reveal/MOTION.md"
+    },
+    {
+      "name": "ugc-ad-generator-promo",
+      "title": "UGC ad generator promo",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Photos",
+        "Music"
+      ],
+      "author": "zero",
+      "handle": "@twoclipping",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/twoclipping-6dd14e",
+      "post": "https://x.com/twoclipping/status/2102554209166000267",
+      "reference": "motions/ugc-ad-generator-promo/reference.mp4",
+      "path": "motions/ugc-ad-generator-promo/MOTION.md"
+    },
+    {
+      "name": "uk-dubstep-track-with-ascii-visuals",
+      "title": "UK dubstep track with ASCII visuals",
+      "tags": [
+        "Music",
+        "Code"
+      ],
+      "author": "James Russo",
+      "handle": "@Rames_Jusso",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/rames-jusso-589f80",
+      "post": "https://x.com/Rames_Jusso/status/2103200703598776559",
+      "reference": "motions/uk-dubstep-track-with-ascii-visuals/reference.mp4",
+      "path": "motions/uk-dubstep-track-with-ascii-visuals/MOTION.md"
+    },
+    {
+      "name": "viralgrow-product-promo",
+      "title": "ViralGrow product promo",
+      "tags": [
+        "Product UI",
+        "Phone",
+        "Photos"
+      ],
+      "author": "Sam",
+      "handle": "@samuel_yostt",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/samuel-yostt-891f87",
+      "post": "https://x.com/samuel_yostt/status/2105746669035733275",
+      "reference": "motions/viralgrow-product-promo/reference.mp4",
+      "path": "motions/viralgrow-product-promo/MOTION.md"
+    },
+    {
+      "name": "visual-guides-library-launch",
+      "title": "Visual guides library launch",
+      "tags": [
+        "Product UI",
+        "Diagrams",
+        "Code"
+      ],
+      "author": "Tech Fusionist | Kushal Gangil",
+      "handle": "@techyoutbe",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/techyoutbe-945b56",
+      "post": "https://x.com/techyoutbe/status/2103465227807588678",
+      "reference": "motions/visual-guides-library-launch/reference.mp4",
+      "path": "motions/visual-guides-library-launch/MOTION.md"
+    },
+    {
+      "name": "voice-agent-saas-launch",
+      "title": "Voice agent SaaS launch",
+      "tags": [
+        "Product UI",
+        "Charts"
+      ],
+      "author": "Rafael",
+      "handle": "@FractaDev",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/fractadev-149adc",
+      "post": "https://x.com/FractaDev/status/2103941789744861266",
+      "reference": "motions/voice-agent-saas-launch/reference.mp4",
+      "path": "motions/voice-agent-saas-launch/MOTION.md"
+    },
+    {
+      "name": "website-analyzer-product-promo",
+      "title": "Website analyzer product promo",
+      "tags": [
+        "Product UI"
+      ],
+      "author": "Indra Poudel",
+      "handle": "@en______ra",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/en-ra-81c6dd",
+      "post": "https://x.com/en______ra/status/2104035188061986980",
+      "reference": "motions/website-analyzer-product-promo/reference.mp4",
+      "path": "motions/website-analyzer-product-promo/MOTION.md"
+    },
+    {
+      "name": "what-day-is-it",
+      "title": "What day is it",
+      "tags": [
+        "Kinetic type",
+        "Music"
+      ],
+      "author": "kazu@\u751f\u6210AI\u00d7\u6559\u80b2",
+      "handle": "@tankazunori0914",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/tankazunori0914-0fc886",
+      "post": "https://x.com/tankazunori0914/status/2105917770907156748",
+      "reference": "motions/what-day-is-it/reference.mp4",
+      "path": "motions/what-day-is-it/MOTION.md"
+    },
+    {
+      "name": "what-happens-in-one-second",
+      "title": "What happens in one second",
+      "tags": [
+        "Kinetic type",
+        "Particles"
+      ],
+      "author": "Nolan Keegan",
+      "handle": "@nolkeeg",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/nolkeeg-bf062e",
+      "post": "https://x.com/nolkeeg/status/2103841917603635633",
+      "reference": "motions/what-happens-in-one-second/reference.mp4",
+      "path": "motions/what-happens-in-one-second/MOTION.md"
+    },
+    {
+      "name": "what-is-git-explainer",
+      "title": "What is Git explainer",
+      "tags": [
+        "Diagrams",
+        "Code"
+      ],
+      "author": "Yunn",
+      "handle": "@Yunn260414",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/yunn260414-60d996",
+      "post": "https://x.com/Yunn260414/status/2104044910769016888",
+      "reference": "motions/what-is-git-explainer/reference.mp4",
+      "path": "motions/what-is-git-explainer/MOTION.md"
+    },
+    {
+      "name": "white-ball-ui-motion-loop",
+      "title": "White ball UI motion loop",
+      "tags": [
+        "Product UI",
+        "Music"
+      ],
+      "author": "testarossa",
+      "handle": "@rossaxbt",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/rossaxbt-94583b",
+      "post": "https://x.com/rossaxbt/status/2108933141406638456",
+      "reference": "motions/white-ball-ui-motion-loop/reference.mp4",
+      "path": "motions/white-ball-ui-motion-loop/MOTION.md"
+    },
+    {
+      "name": "white-russian-recipe-animation",
+      "title": "White Russian recipe animation",
+      "tags": [
+        "Diagrams"
+      ],
+      "author": "Sarutobi Sasuke\ud83e\udd77",
+      "handle": "@Sarut0biSasuke",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/sarut0bisasuke-cefa43",
+      "post": "https://x.com/Sarut0biSasuke/status/2103418429248069973",
+      "reference": "motions/white-russian-recipe-animation/reference.mp4",
+      "path": "motions/white-russian-recipe-animation/MOTION.md"
+    },
+    {
+      "name": "whiteboard-skill-tutorial",
+      "title": "Whiteboard skill tutorial",
+      "tags": [
+        "Product UI",
+        "Diagrams"
+      ],
+      "author": "Lemomo",
+      "handle": "@lemomo_ai",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/lemomo-ai-0d9cff",
+      "post": "https://x.com/lemomo_ai/status/2104070024575242622",
+      "reference": "motions/whiteboard-skill-tutorial/reference.mp4",
+      "path": "motions/whiteboard-skill-tutorial/MOTION.md"
+    },
+    {
+      "name": "youtube-transcript-product-ad",
+      "title": "YouTube transcript product ad",
+      "tags": [
+        "Product UI",
+        "Kinetic type"
+      ],
+      "author": "Tastefully",
+      "handle": "@tstfully",
+      "model": "Opus 5.5",
+      "source": "https://prompt-motion.com/tstfully-0aa6b4",
+      "post": "https://x.com/tstfully/status/2104033772949680192",
+      "reference": "motions/youtube-transcript-product-ad/reference.mp4",
+      "path": "motions/youtube-transcript-product-ad/MOTION.md"
+    }
+  ]
+}

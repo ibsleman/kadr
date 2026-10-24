@@ -1,0 +1,10 @@
+node_modules/
+probe/
+*.wav
+.DS_Store
+
+# Reference videos belong to the people who made them. They are not
+# redistributed here — `node scripts/harvest.mjs --all` fetches them from the
+# source gallery onto your own machine.
+motions/*/reference.mp4
+motions/*/reference.webp

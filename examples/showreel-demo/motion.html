@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kadr — showreel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;800;900&display=block" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#0b0b0b;overflow:hidden;height:100%}
+  body{display:grid;place-items:center}
+  canvas{display:block;width:1920px;height:1080px}
+  @media (max-width:1920px){ body{place-items:start} canvas{transform-origin:0 0} }
+</style>
+</head>
+<body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<script>
+/* ===========================================================================
+   Concept: "the grid becomes type becomes form becomes signal"
+   Every shot is made out of the previous one. 120 BPM, something on every beat.
+   Every pixel is a pure function of t, computed inside window.seek(t).
+   =========================================================================== */
+
+const W = 1920, H = 1080;
+const BPM = 120, BEAT = 60 / BPM;            // 0.5s
+const BAR = BEAT * 4;                        // 2.0s
+window.DURATION = 15;
+
+const PAPER = '#F2EFE6';
+const INK   = '#121212';
+const ORANGE= '#FF4A17';
+const BLUE  = '#2B45FF';
+
+const FONT = '"Geist", "Inter", "Helvetica Neue", Arial, sans-serif';
+
+const c = document.getElementById('c');
+const ctx = c.getContext('2d', { alpha: false });
+
+/* ---------------------------------------------------------------- easing */
+const clamp01 = x => x < 0 ? 0 : x > 1 ? 1 : x;
+const lerp  = (a, b, x) => a + (b - a) * x;
+const seg   = (t, a, d) => clamp01((t - a) / d);
+const easeOutExpo   = x => x >= 1 ? 1 : 1 - Math.pow(2, -10 * x);
+const easeInExpo    = x => x <= 0 ? 0 : Math.pow(2, 10 * x - 10);
+const easeInOutCubic= x => x < .5 ? 4*x*x*x : 1 - Math.pow(-2*x + 2, 3) / 2;
+const easeOutQuint  = x => 1 - Math.pow(1 - x, 5);
+const spring = (x, w = 11) => x <= 0 ? 0 : x >= 1 ? 1 : 1 - Math.exp(-w * x) * (1 + w * x);
+
+/* seeded prng — same seed, same sequence, every frame */
+const rand = (seed) => { let s = (seed >>> 0) || 1;
+  return () => { s ^= s << 13; s >>>= 0; s ^= s >> 17; s ^= s << 5; s >>>= 0; return s / 4294967296; }; };
+
+/* beat helpers */
+const beatIndex = t => Math.floor(t / BEAT);
+const beatPhase = t => (t % BEAT) / BEAT;              // 0..1 inside the beat
+const pulse = (t, w = 0.22) => 1 - clamp01(beatPhase(t) / w);  // 1 on the beat, decays
+
+/* ---------------------------------------------------------------- shots */
+/* each shot is [start, end); every one is built out of the one before it     */
+const S1 = [0.00, 2.00];   // grid builds, orange wipe            (bar 1)
+const S2 = [2.00, 4.50];   // grid columns become MOTION          (bar 2 + a beat)
+const S3 = [4.50, 7.00];   // the O breaks into shapes
+const S4 = [7.00, 9.50];   // shapes stack into 3D contour forms
+const S5 = [9.50, 12.00];  // forms flatten into signal / data
+const S6 = [12.00, 15.00]; // signal recomposes into the end title, loops
+
+const inShot = (t, s) => t >= s[0] && t < s[1];
+const local  = (t, s) => (t - s[0]) / (s[1] - s[0]);
+
+/* ---------------------------------------------------------------- paint */
+function bg(fill) { ctx.fillStyle = fill; ctx.fillRect(0, 0, W, H); }
+
+function setType(size, weight = 900, tracking = 0) {
+  ctx.font = `${weight} ${size}px ${FONT}`;
+  ctx.letterSpacing = `${tracking}px`;
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'alphabetic';
+}
+
+/* measure a word the same way `letters` lays it out: per-glyph, tracking added
+   between glyphs by hand, so positions never depend on canvas letterSpacing */
+function measureWord(word, size, weight, tracking) {
+  ctx.font = `${weight} ${size}px ${FONT}`;
+  ctx.letterSpacing = '0px';
+  const widths = [...word].map(ch => ctx.measureText(ch).width);
+  const total = widths.reduce((a, b) => a + b, 0) + tracking * (word.length - 1);
+  return { widths, total };
+}
+
+/* x of the centre of glyph i, for a word centred on cx */
+function glyphCx(m, i, tracking, cx) {
+  let x = cx - m.total / 2;
+  for (let j = 0; j < i; j++) x += m.widths[j] + tracking;
+  return x + m.widths[i] / 2;
+}
+
+/* draw a word glyph by glyph, each glyph its own transform */
+function letters(word, size, weight, tracking, cx, cy, perLetter) {
+  const m = measureWord(word, size, weight, tracking);
+  let x = cx - m.total / 2;
+  [...word].forEach((ch, i) => {
+    ctx.save();
+    ctx.translate(x + m.widths[i] / 2, cy);
+    perLetter(i, ch, m.widths[i]);
+    ctx.font = `${weight} ${size}px ${FONT}`;
+    ctx.letterSpacing = '0px';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillText(ch, -m.widths[i] / 2, 0);
+    ctx.restore();
+    x += m.widths[i] + tracking;
+  });
+  return m;
+}
+
+/* the 12-column Swiss grid every shot is built on */
+const COLS = 12, MARGIN = 140, GUTTER = 24;
+const COLW = (W - MARGIN * 2 - GUTTER * (COLS - 1)) / COLS;
+const colX = i => MARGIN + i * (COLW + GUTTER);
+
+/* ======================================================================= */
+/* SHOT 1 — the grid arrives, column by column, and an orange bar wipes     */
+/* ======================================================================= */
+function grid(fade, scanAt) {
+  // the 12 columns. Always full height, so t=0 matches the last frame of shot 6.
+  for (let i = 0; i < COLS; i++) {
+    const lit = i % 5 === 2;
+    const scan = scanAt === null ? 0 : clamp01(1 - Math.abs(i - scanAt) / 1.6);
+    ctx.fillStyle = lit || scan > 0 ? ORANGE : INK;
+    ctx.globalAlpha = (lit ? 1 : Math.max(0.10, scan)) * fade;
+    ctx.fillRect(colX(i), 0, COLW, H);
+  }
+  ctx.globalAlpha = 1;
+}
+
+function shot1(t, fade) {
+  const p = local(t, S1);
+  bg(PAPER);
+
+  // beat 1 — a band of orange runs across the grid that is already standing
+  const scan = p < 0.34 ? lerp(-2, COLS + 2, easeInOutCubic(seg(p, 0.0, 0.34))) : null;
+  grid(fade, scan);
+
+  // beat 2 — two rules draw across, the frame the whole piece is set in
+  [0.30, 0.40].forEach((a, j) => {
+    const k = easeOutQuint(seg(p, a, 0.20));
+    if (k <= 0) return;
+    const y = j === 0 ? H * 0.34 : H * 0.66;
+    ctx.fillStyle = INK; ctx.globalAlpha = fade;
+    ctx.fillRect(0, y, W * k, 6);
+  });
+  ctx.globalAlpha = 1;
+
+  // beat 3 — the orange wipe fills the band between them. The hook.
+  const wipe = easeInOutCubic(seg(p, 0.46, 0.26));
+  if (wipe > 0) {
+    ctx.globalAlpha = fade;
+    ctx.fillStyle = ORANGE;
+    ctx.fillRect(0, H * 0.34, W * wipe, H * 0.32);
+    ctx.fillStyle = BLUE;                       // leading edge, reads directional
+    ctx.fillRect(W * wipe - 12, H * 0.34, 12, H * 0.32);
+    ctx.globalAlpha = 1;
+  }
+
+  // beat 4 — GRID was already inside the band, and holds to the end of the shot
+  const rev = seg(p, 0.52, 0.30);
+  if (rev > 0) {
+    ctx.save();
+    ctx.globalAlpha = fade;
+    ctx.beginPath(); ctx.rect(0, H * 0.34, W * wipe, H * 0.32); ctx.clip();
+    letters('GRID', 250, 900, -4, W / 2, H * 0.58, (i) => {
+      ctx.translate(0, lerp(110, 0, spring(seg(rev, i * 0.07, 0.46), 14)));
+      ctx.fillStyle = i === 2 ? INK : PAPER;
+    });
+    ctx.restore();
+  }
+}
+
+/* ======================================================================= */
+/* SHOT 2 — the columns collapse into MOTION, letter per beat               */
+/* ======================================================================= */
+const WORD = 'MOTION', WSIZE = 290, WTRACK = -4;
+const wordBaseline = H * 0.5 + WSIZE * 0.34;
+
+function shot2(t, fade) {
+  const p = local(t, S2);
+  bg(PAPER);
+
+  const m = measureWord(WORD, WSIZE, 900, WTRACK);
+
+  // the 12 columns collapse into the 6 letter slots, two columns per letter
+  for (let i = 0; i < COLS; i++) {
+    const li = Math.floor(i / 2);
+    const k = easeInOutCubic(seg(p, 0.02 + li * 0.085, 0.34));
+    if (k >= 1) continue;
+    const gx = glyphCx(m, li, WTRACK, W / 2);
+    const tx = lerp(colX(i), gx - m.widths[li] * 0.25, k);
+    const tw = lerp(COLW, m.widths[li] * 0.5, k);
+    const ty = lerp(0, wordBaseline - WSIZE * 0.72, k);
+    const th = lerp(H, WSIZE * 0.74, k);
+    ctx.fillStyle = i % 5 === 2 ? ORANGE : INK;
+    ctx.globalAlpha = (i % 5 === 2 ? 1 : 0.10) * (1 - k) * fade;
+    ctx.fillRect(tx, ty, tw, th);
+  }
+  ctx.globalAlpha = 1;
+
+  // the band from shot 1 is still over them, closing to a rule as MOTION lands
+  const close = easeInOutCubic(seg(p, 0.0, 0.22));
+  const bandH = lerp(H * 0.32, 10, close);
+  ctx.globalAlpha = fade; ctx.fillStyle = ORANGE;
+  ctx.fillRect(0, H * 0.5 - bandH / 2, W, bandH);
+  ctx.globalAlpha = 1;
+
+  // GRID is still inside the band for the first half beat, then leaves upward
+  const out = easeInOutCubic(seg(p, 0.0, 0.17));
+  if (out < 1) {
+    ctx.save();
+    ctx.beginPath(); ctx.rect(0, H * 0.5 - bandH / 2, W, bandH); ctx.clip();
+    letters('GRID', 250, 900, -4, W / 2, H * 0.58 - out * 260, (i) => {
+      ctx.globalAlpha = fade * (1 - out);
+      ctx.fillStyle = i === 2 ? INK : PAPER;
+    });
+    ctx.restore();
+    ctx.globalAlpha = 1;
+  }
+
+  // one letter per beat, each sliding in from alternating sides.
+  // No hand-drawn smear: the renderer's 3 subframes are the motion blur.
+  letters(WORD, WSIZE, 900, WTRACK, W / 2, wordBaseline, (i) => {
+    const k = spring(seg(p, 0.10 + i * 0.085, 0.40), 13);
+    ctx.globalAlpha = fade * clamp01(k * 3);
+    ctx.translate(lerp(i % 2 ? 300 : -300, 0, k), 0);
+    ctx.fillStyle = i === 1 ? ORANGE : INK;   // the O carries the band's colour
+  });
+  ctx.globalAlpha = 1;
+
+  // the O starts becoming a ring — the seed shot 3 grows from
+  const oGrow = easeOutExpo(seg(p, 0.74, 0.26));
+  if (oGrow > 0) {
+    const ox = glyphCx(m, 1, WTRACK, W / 2);
+    const oy = wordBaseline - WSIZE * 0.345;
+    ctx.save();
+    ctx.globalAlpha = fade * oGrow;
+    ctx.strokeStyle = BLUE;
+    ctx.lineWidth = lerp(6, 34, oGrow);
+    ctx.beginPath();
+    ctx.arc(ox, oy, lerp(WSIZE * 0.30, WSIZE * 0.46, oGrow),
+            -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * oGrow);
+    ctx.stroke();
+    ctx.restore();
+  }
+}
+
+/* ======================================================================= */
+/* SHOT 3 — the ring breaks into the four primitives, one per beat          */
+/* ======================================================================= */
+function primitive(kind, x, y, r, fill, morph) {
+  ctx.fillStyle = fill;
+  ctx.beginPath();
+  if (kind === 0) {                                     // circle
+    ctx.arc(x, y, r, 0, Math.PI * 2);
+  } else if (kind === 1) {                              // square, corners easing in
+    const k = r * lerp(1.0, 0.886, morph);
+    ctx.rect(x - k, y - k, k * 2, k * 2);
+  } else if (kind === 2) {                              // triangle
+    for (let i = 0; i < 3; i++) {
+      const a = -Math.PI / 2 + i * (Math.PI * 2 / 3);
+      const px = x + Math.cos(a) * r * 1.15, py = y + Math.sin(a) * r * 1.15;
+      i ? ctx.lineTo(px, py) : ctx.moveTo(px, py);
+    }
+    ctx.closePath();
+  } else {                                              // bar
+    ctx.rect(x - r * 0.26, y - r, r * 0.52, r * 2);
+  }
+  ctx.fill();
+}
+
+function shot3(t, fade) {
+  const p = local(t, S3);
+  bg(PAPER);
+
+  // the horizontal rule from shot 1 is back, holding the row
+  ctx.fillStyle = INK; ctx.globalAlpha = 0.12 * fade;
+  ctx.fillRect(0, H * 0.5, W, 4); ctx.globalAlpha = 1;
+
+  const n = 4, R = 148, gap = 400;
+  const cxs = Array.from({ length: n }, (_, i) => W / 2 + (i - (n - 1) / 2) * gap);
+  const cols = [INK, ORANGE, BLUE, INK];
+
+  // the blue ring shot 2 ended on is still here, and it IS the first circle:
+  // it travels to its slot and fills in over the first half beat
+  const land = easeOutExpo(seg(p, 0.0, 0.14));
+  if (land < 1) {
+    const ox = glyphCx(measureWord(WORD, WSIZE, 900, WTRACK), 1, WTRACK, W / 2);
+    ctx.save();
+    ctx.globalAlpha = fade * (1 - land);
+    ctx.strokeStyle = BLUE;
+    ctx.lineWidth = lerp(34, 2, land);
+    ctx.beginPath();
+    ctx.arc(lerp(ox, cxs[0], land), lerp(wordBaseline - WSIZE * 0.345, H * 0.5, land),
+            lerp(WSIZE * 0.46, R, land), 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  for (let i = 0; i < n; i++) {
+    const a = -0.08 + i * 0.13;              // the first shape is already arriving at p = 0
+    const k = spring(seg(p, a, 0.34), 13);
+    if (k <= 0) continue;
+    const morph = easeInOutCubic(seg(p, a + 0.12, 0.30));
+    const y = H * 0.5;
+    ctx.save();
+    ctx.globalAlpha = fade;
+    ctx.translate(cxs[i], y);
+    ctx.rotate(lerp(-0.9, 0, k) + (i === 2 ? easeInOutCubic(seg(p, 0.62, 0.28)) * Math.PI : 0));
+    ctx.scale(k, k);
+    primitive(i, 0, 0, R, cols[i], morph);
+    ctx.restore();
+  }
+
+  // the grid reasserts itself on beat 4 — ticks that become the stack in shot 4
+  const ticks = easeOutExpo(seg(p, 0.66, 0.30));
+  if (ticks > 0) {
+    ctx.globalAlpha = fade;
+    for (let i = 0; i < 40; i++) {
+      const x = (i / 39) * W;
+      const h = 18 + Math.abs(Math.sin(i * 0.7)) * 54 * ticks;
+      ctx.fillStyle = i % 7 === 3 ? ORANGE : INK;
+      ctx.globalAlpha = fade * (i % 7 === 3 ? 1 : 0.35) * ticks;
+      ctx.fillRect(x - 4, H * 0.84 - h, 8, h);
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  // the strongest shape pushes toward camera — the 2D→3D handoff
+  const push = easeInExpo(seg(p, 0.80, 0.20));
+  if (push > 0) {
+    ctx.save();
+    ctx.globalAlpha = fade * push;
+    ctx.translate(W / 2, H * 0.5);
+    ctx.scale(lerp(1, 3.4, push), lerp(1, 3.4, push));
+    primitive(0, 0, 0, R, ORANGE, 1);
+    ctx.restore();
+  }
+}
+
+/* ======================================================================= */
+/* SHOT 4 — the primitives stack into 3D contour forms                      */
+/* ======================================================================= */
+function contourForm(cx, cy, R, layers, shape, spin, tilt, k, fade) {
+  // stacked ellipses: a solid read of a 3D form, built only from the shapes
+  for (let i = 0; i < layers; i++) {
+    const u = i / (layers - 1);                     // 0 bottom → 1 top
+    const vis = clamp01((k - u * 0.35) * 2.2);
+    if (vis <= 0) continue;
+    let r;
+    if (shape === 'sphere') r = R * Math.sqrt(Math.max(0, 1 - Math.pow(u * 2 - 1, 2)));
+    else                    r = R * (1 - u);        // cone
+    const y = cy + lerp(R, -R, u) * tilt;
+    const ry = r * 0.30;
+    ctx.globalAlpha = fade * vis;
+    ctx.fillStyle = i % 3 === 0 ? ORANGE : (i % 3 === 1 ? BLUE : INK);
+    ctx.beginPath();
+    ctx.ellipse(cx + Math.sin(spin + u * 2.2) * 10 * k, y, r, ry, 0, 0, Math.PI * 2);
+    ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+}
+
+function shot4(t, fade) {
+  const p = local(t, S4);
+  bg(PAPER);
+
+  const spin = t * 0.9;
+  const kA = spring(seg(p, -0.07, 0.30), 13);   // already forming at p = 0
+  const kB = spring(seg(p, 0.22, 0.32), 13);
+  const tilt = lerp(0.35, 0.62, easeInOutCubic(seg(p, 0.0, 0.9)));
+
+  // the orange disc shot 3 pushed into camera collapses into the first form
+  const collapse = easeOutExpo(seg(p, 0.0, 0.10));
+  if (collapse < 1) {
+    ctx.save();
+    ctx.globalAlpha = fade * (1 - collapse);
+    ctx.fillStyle = ORANGE;
+    ctx.beginPath();
+    ctx.arc(lerp(W / 2, W * 0.33, collapse), lerp(H * 0.5, H * 0.53, collapse),
+            lerp(520, 250, collapse), 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  }
+
+  contourForm(W * 0.33, H * 0.53, 250, 26, 'sphere', spin, tilt, kA, fade);
+  contourForm(W * 0.70, H * 0.53, 250, 26, 'cone',  -spin, tilt, kB, fade);
+
+  // a vertical rule drops between them on beat 3 — the axis of shot 5
+  const axis = easeOutExpo(seg(p, 0.56, 0.24));
+  if (axis > 0) {
+    ctx.fillStyle = ORANGE; ctx.globalAlpha = fade;
+    ctx.fillRect(W * 0.5 - 4, H * 0.5 - (H * 0.44) * axis, 8, (H * 0.88) * axis);
+    ctx.globalAlpha = 1;
+  }
+
+  // labels, set small and tight — the only type in the shot
+  const lab = easeOutQuint(seg(p, 0.46, 0.26));
+  if (lab > 0) {
+    ctx.globalAlpha = fade * lab;
+    ctx.fillStyle = INK;
+    setType(30, 600, 6);
+    ctx.textAlign = 'center';
+    ctx.fillText('STACK  /  26 CONTOURS', W * 0.33, H * 0.88);
+    ctx.fillText('FALLOFF  /  LINEAR', W * 0.70, H * 0.88);
+    ctx.textAlign = 'left';
+    ctx.globalAlpha = 1;
+  }
+
+  // the forms slice into horizontal bands — becomes the sequencer in shot 5
+  const slice = easeInOutCubic(seg(p, 0.80, 0.20));
+  if (slice > 0) {
+    ctx.globalAlpha = fade * slice;
+    for (let i = 0; i < 8; i++) {
+      const y = H * 0.18 + i * (H * 0.64 / 8);
+      ctx.fillStyle = PAPER;
+      ctx.fillRect(0, y + (H * 0.64 / 8) * 0.62, W, (H * 0.64 / 8) * 0.38 * slice);
+    }
+    ctx.globalAlpha = 1;
+  }
+}
+
+/* ======================================================================= */
+/* SHOT 5 — the bands become the sequencer: the data moment                 */
+/* ======================================================================= */
+const TRACKS = ['KICK', 'CLAP', 'HATS', 'BASS', 'STAB', 'RISER', 'HITS'];
+function shot5(t, fade) {
+  const p = local(t, S5);
+  bg(PAPER);
+
+  const left = 420, right = W - 220;
+  const top = H * 0.20, rowH = (H * 0.62) / TRACKS.length;
+  const b = beatIndex(t);
+
+  setType(26, 600, 5);
+  for (let r = 0; r < TRACKS.length; r++) {
+    const k = easeOutExpo(seg(p, -0.06 + r * 0.045, 0.24));
+    if (k <= 0) continue;
+    const y = top + r * rowH;
+
+    // the rule
+    ctx.globalAlpha = fade * k * 0.18; ctx.fillStyle = INK;
+    ctx.fillRect(left, y + rowH * 0.5, (right - left) * k, 3);
+
+    // the label
+    ctx.globalAlpha = fade * k; ctx.fillStyle = INK;
+    setType(26, 600, 5); ctx.textAlign = 'right';
+    ctx.fillText(TRACKS[r], left - 28, y + rowH * 0.5 + 9);
+    ctx.textAlign = 'left';
+
+    // the value bar — a different pure function per track, so it reads as data
+    const rr = rand(r * 977 + 11);
+    const base = 0.25 + rr() * 0.5;
+    const swing = Math.sin(t * (1.2 + r * 0.33) + r) * 0.5 + 0.5;
+    const hit = (b % (r + 2) === 0) ? pulse(t, 0.3) : 0;
+    const v = clamp01(base * 0.6 + swing * 0.3 + hit * 0.35) * k;
+    ctx.fillStyle = r % 3 === 1 ? ORANGE : (r % 3 === 2 ? BLUE : INK);
+    ctx.fillRect(left, y + rowH * 0.5 - 14, (right - left) * v, 28);
+
+    // the step markers
+    ctx.globalAlpha = fade * k * 0.9;
+    for (let s = 0; s < 16; s++) {
+      const on = (s % (r + 2)) === 0;
+      if (!on) continue;
+      const x = left + ((right - left) / 16) * (s + 0.5);
+      const live = (b % 16) === s ? 1 : 0.22;
+      ctx.fillStyle = INK; ctx.globalAlpha = fade * k * live;
+      ctx.fillRect(x - 3, y + rowH * 0.5 - 26, 6, 52);
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  // the playhead — the one element that is literally the beat
+  const ph = (t % BAR) / BAR;
+  ctx.fillStyle = ORANGE; ctx.globalAlpha = fade;
+  ctx.fillRect(lerp(left, right, ph) - 3, top - 26, 6, rowH * TRACKS.length + 20);
+  ctx.globalAlpha = 1;
+
+  // beat counter, the only big number in the piece
+  const cnt = easeOutExpo(seg(p, -0.05, 0.18));
+  if (cnt > 0) {
+    ctx.save();
+    ctx.globalAlpha = fade * cnt;
+    ctx.translate(205, H * 0.5);
+    ctx.scale(lerp(0.6, 1, cnt) + pulse(t) * 0.05, lerp(0.6, 1, cnt) + pulse(t) * 0.05);
+    ctx.fillStyle = ORANGE;
+    ctx.beginPath(); ctx.arc(0, 0, 118, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = PAPER; setType(96, 900, -3); ctx.textAlign = 'center';
+    ctx.fillText(String(b % 32).padStart(2, '0'), 0, 34);
+    setType(20, 600, 8);
+    ctx.fillText('BEAT', 0, 76);
+    ctx.textAlign = 'left';
+    ctx.restore();
+  }
+
+  // everything compresses toward the centre line — the riser into shot 6
+  const squeeze = easeInExpo(seg(p, 0.82, 0.18));
+  if (squeeze > 0) {
+    ctx.globalAlpha = fade; ctx.fillStyle = PAPER;
+    ctx.fillRect(0, 0, W, (H * 0.5) * squeeze);
+    ctx.fillRect(0, H - (H * 0.5) * squeeze, W, (H * 0.5) * squeeze);
+    // what survives the squeeze is the orange playhead, flat across the frame:
+    // that band is what shot 6 opens out of
+    const bh = lerp(6, 150, squeeze);
+    ctx.fillStyle = ORANGE;
+    ctx.fillRect(0, H / 2 - bh / 2, W * squeeze, bh);
+    ctx.globalAlpha = 1;
+  }
+}
+
+/* ======================================================================= */
+/* SHOT 6 — the strongest moment, the end title, and the loop back          */
+/* ======================================================================= */
+function shot6(t, fade) {
+  const p = local(t, S6);
+
+  // the band from shot 5 opens into a full orange field — the strongest beat
+  const open = easeOutExpo(seg(p, 0.0, 0.13));
+  bg(PAPER);
+  const bandH = lerp(150, H, open);
+  ctx.fillStyle = ORANGE;
+  ctx.fillRect(0, H / 2 - bandH / 2, W, bandH);
+
+  // KADR lands letter by letter, and the rule draws under it
+  ctx.save();
+  ctx.globalAlpha = fade;
+  ctx.beginPath(); ctx.rect(0, H / 2 - bandH / 2, W, bandH); ctx.clip();
+
+  letters('KADR', 340, 900, -6, W / 2, H * 0.56, (i) => {
+    const kk = spring(seg(p, 0.10 + i * 0.030, 0.36), 12);
+    ctx.translate(0, lerp(-300, 0, kk));
+    ctx.fillStyle = i === 1 ? INK : PAPER;
+  });
+  ctx.restore();
+
+  // the rule from shot 1 draws across between the two words
+  const rule = easeInOutCubic(seg(p, 0.26, 0.18));
+  if (rule > 0) {
+    ctx.fillStyle = INK; ctx.globalAlpha = fade;
+    ctx.fillRect(W / 2 - (W * 0.30) * rule, H * 0.56 + 54, (W * 0.60) * rule, 8);
+    ctx.globalAlpha = 1;
+  }
+
+  // the one line of small type
+  const sub = easeOutQuint(seg(p, 0.42, 0.18));
+  if (sub > 0) {
+    ctx.globalAlpha = fade * sub;
+    ctx.fillStyle = PAPER; setType(28, 600, 10); ctx.textAlign = 'center';
+    ctx.fillText('ONE FILE  ·  ONE FUNCTION OF TIME  ·  60 FPS', W / 2, H * 0.78);
+    ctx.textAlign = 'left'; ctx.globalAlpha = 1;
+  }
+
+  // the loop: paper sweeps in from both edges and the grid of shot 1 is
+  // already standing behind it, so the last frame equals the first
+  const back = easeInOutCubic(seg(p, 0.70, 0.30));
+  if (back > 0) {
+    const w = (W / 2) * back;
+    ctx.save();
+    ctx.globalAlpha = fade;
+    ctx.fillStyle = PAPER;
+    ctx.fillRect(0, 0, w, H);
+    ctx.fillRect(W - w, 0, w, H);
+    ctx.beginPath(); ctx.rect(0, 0, w, H); ctx.rect(W - w, 0, w, H); ctx.clip();
+    grid(fade, null);
+    ctx.restore();
+    ctx.globalAlpha = 1;
+  }
+}
+
+/* ======================================================================= */
+/* seek — the only entry point. Pure function of t.                         */
+/* ======================================================================= */
+window.seek = function (t) {
+  t = Math.max(0, Math.min(window.DURATION - 1e-6, t));
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.globalAlpha = 1;
+  ctx.letterSpacing = '0px';
+  bg(PAPER);
+
+  // shots never crossfade; the 60ms overlap only hides the single-frame seam
+  const F = 0.05;
+  const fadeOf = (s) => clamp01((t - s[0] + F) / F) * clamp01((s[1] - t + F) / F);
+
+  if (inShot(t, S1) || t < S1[1] + F) { ctx.save(); shot1(Math.min(t, S1[1] - 1e-4), fadeOf(S1)); ctx.restore(); }
+  if (inShot(t, S2)) { ctx.save(); shot2(t, 1); ctx.restore(); }
+  if (inShot(t, S3)) { ctx.save(); shot3(t, 1); ctx.restore(); }
+  if (inShot(t, S4)) { ctx.save(); shot4(t, 1); ctx.restore(); }
+  if (inShot(t, S5)) { ctx.save(); shot5(t, 1); ctx.restore(); }
+  if (inShot(t, S6)) { ctx.save(); shot6(t, 1); ctx.restore(); }
+
+  // a one-frame white flash on each shot change: heard as well as seen
+  const cuts = [S2[0], S3[0], S4[0], S5[0], S6[0]];
+  for (const cu of cuts) {
+    const d = t - cu;
+    if (d >= 0 && d < 0.035) {
+      ctx.fillStyle = '#fff';
+      ctx.globalAlpha = (1 - d / 0.035) * 0.22;
+      ctx.fillRect(0, 0, W, H);
+      ctx.globalAlpha = 1;
+    }
+  }
+
+  // frame edge: a hairline that holds the whole thing together
+  ctx.strokeStyle = INK; ctx.globalAlpha = 0.14; ctx.lineWidth = 2;
+  ctx.strokeRect(1, 1, W - 2, H - 2); ctx.globalAlpha = 1;
+};
+
+/* ======================================================================= */
+/* the soundtrack, written in code, on the same beat grid                   */
+/* ======================================================================= */
+function noiseBuf(ctx2, dur, seed) {
+  const b = ctx2.createBuffer(1, Math.max(1, Math.ceil(ctx2.sampleRate * dur)), ctx2.sampleRate);
+  const d = b.getChannelData(0);
+  let s = seed >>> 0 || 7;
+  for (let i = 0; i < d.length; i++) { s = (s * 1664525 + 1013904223) >>> 0; d[i] = s / 2147483648 - 1; }
+  return b;
+}
+const envTo = (g, t, a, d, peak) => {
+  g.gain.setValueAtTime(0.0001, t);
+  g.gain.exponentialRampToValueAtTime(Math.max(0.0002, peak), t + a);
+  g.gain.exponentialRampToValueAtTime(0.0001, t + a + d);
+};
+
+window.renderAudio = async function () {
+  const SR = 48000;
+  const ac = new OfflineAudioContext(2, Math.ceil(SR * window.DURATION), SR);
+  const bus = ac.createDynamicsCompressor();
+  bus.threshold.value = -14; bus.ratio.value = 4; bus.attack.value = 0.003; bus.release.value = 0.22;
+  // soft clipper: tanh curve, so transients round off instead of hitting 0 dBFS
+  const shaper = ac.createWaveShaper();
+  const N = 4096, curve = new Float32Array(N), drive = 1.7;
+  for (let i = 0; i < N; i++) {
+    const x = (i / (N - 1)) * 2 - 1;
+    curve[i] = Math.tanh(x * drive) / Math.tanh(drive);
+  }
+  shaper.curve = curve; shaper.oversample = '4x';
+  const out = ac.createGain(); out.gain.value = 0.72;
+  bus.connect(shaper).connect(out).connect(ac.destination);
+
+  const kick = (t) => {
+    const o = ac.createOscillator(), g = ac.createGain();
+    o.frequency.setValueAtTime(150, t);
+    o.frequency.exponentialRampToValueAtTime(42, t + 0.09);
+    envTo(g, t, 0.002, 0.26, 0.95);
+    o.connect(g).connect(bus); o.start(t); o.stop(t + 0.42);
+  };
+  const hat = (t, open) => {
+    const s = ac.createBufferSource(); s.buffer = noiseBuf(ac, 0.25, 991);
+    const f = ac.createBiquadFilter(); f.type = 'highpass'; f.frequency.value = 8200;
+    const g = ac.createGain(); envTo(g, t, 0.001, open ? 0.13 : 0.032, 0.17);
+    s.connect(f).connect(g).connect(bus); s.start(t); s.stop(t + 0.35);
+  };
+  const clap = (t) => [0, 0.011, 0.023].forEach((o, i) => {
+    const s = ac.createBufferSource(); s.buffer = noiseBuf(ac, 0.3, 313 + i);
+    const f = ac.createBiquadFilter(); f.type = 'bandpass'; f.frequency.value = 1650; f.Q.value = 1.1;
+    const g = ac.createGain(); envTo(g, t + o, 0.001, i === 2 ? 0.17 : 0.035, 0.34);
+    s.connect(f).connect(g).connect(bus); s.start(t + o); s.stop(t + o + 0.4);
+  });
+  const stab = (t, freq, dur, type) => {
+    const o = ac.createOscillator(); o.type = type || 'sawtooth'; o.frequency.value = freq;
+    const f = ac.createBiquadFilter(); f.type = 'lowpass'; f.Q.value = 7;
+    f.frequency.setValueAtTime(freq * 11, t);
+    f.frequency.exponentialRampToValueAtTime(freq * 2, t + dur);
+    const g = ac.createGain(); envTo(g, t, 0.004, dur, 0.22);
+    o.connect(f).connect(g).connect(bus); o.start(t); o.stop(t + dur + 0.12);
+  };
+  const hit = (t) => {
+    const s = ac.createBufferSource(); s.buffer = noiseBuf(ac, 0.5, 77);
+    const f = ac.createBiquadFilter(); f.type = 'lowpass'; f.frequency.value = 2400;
+    const g = ac.createGain(); envTo(g, t, 0.002, 0.42, 0.4);
+    s.connect(f).connect(g).connect(bus); s.start(t); s.stop(t + 0.6);
+    const o = ac.createOscillator(), g2 = ac.createGain();
+    o.frequency.setValueAtTime(90, t); o.frequency.exponentialRampToValueAtTime(30, t + 0.3);
+    envTo(g2, t, 0.003, 0.34, 0.5);
+    o.connect(g2).connect(bus); o.start(t); o.stop(t + 0.5);
+  };
+  const riser = (t, dur) => {
+    const s = ac.createBufferSource(); s.buffer = noiseBuf(ac, dur + 0.3, 4242);
+    const f = ac.createBiquadFilter(); f.type = 'bandpass'; f.Q.value = 2.2;
+    f.frequency.setValueAtTime(320, t);
+    f.frequency.exponentialRampToValueAtTime(9000, t + dur);
+    const g = ac.createGain();
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.exponentialRampToValueAtTime(0.30, t + dur);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + dur + 0.14);
+    s.connect(f).connect(g).connect(bus); s.start(t); s.stop(t + dur + 0.3);
+  };
+
+  const beats = Math.floor(window.DURATION / BEAT);
+  const dropBar = 4;                                   // one bar of kick only
+  for (let b = 0; b < beats; b++) {
+    const t = b * BEAT;
+    const bar = Math.floor(b / 4);
+    kick(t);
+    if (bar === dropBar) continue;
+    hat(t + BEAT / 2, b % 4 === 3);
+    if (b % 4 === 1 || b % 4 === 3) clap(t);
+    if (bar >= 1) stab(t + BEAT / 2, [110, 146.8, 164.8, 98][b % 4] * (bar >= 5 ? 2 : 1), 0.2);
+  }
+  // a hit on every shot change
+  [S2[0], S3[0], S4[0], S5[0], S6[0]].forEach(hit);
+  // the riser into the last full bar
+  riser(S6[0] - BAR, BAR);
+  // the end chord
+  [146.8, 220, 293.7].forEach((f, i) => stab(S6[0], f, 1.6, i === 2 ? 'square' : 'sawtooth'));
+
+  const buf = await ac.startRendering();
+  const n = buf.length, ch = buf.numberOfChannels, sr = buf.sampleRate;
+  const dv = new DataView(new ArrayBuffer(44 + n * ch * 2));
+  const str = (o, s) => { for (let i = 0; i < s.length; i++) dv.setUint8(o + i, s.charCodeAt(i)); };
+  str(0, 'RIFF'); dv.setUint32(4, 36 + n * ch * 2, true); str(8, 'WAVE');
+  str(12, 'fmt '); dv.setUint32(16, 16, true); dv.setUint16(20, 1, true);
+  dv.setUint16(22, ch, true); dv.setUint32(24, sr, true);
+  dv.setUint32(28, sr * ch * 2, true); dv.setUint16(32, ch * 2, true);
+  dv.setUint16(34, 16, true); str(36, 'data'); dv.setUint32(40, n * ch * 2, true);
+  const chans = Array.from({ length: ch }, (_, i) => buf.getChannelData(i));
+  let o = 44;
+  for (let i = 0; i < n; i++) for (let cI = 0; cI < ch; cI++) {
+    const s = Math.max(-1, Math.min(1, chans[cI][i]));
+    dv.setInt16(o, s < 0 ? s * 0x8000 : s * 0x7fff, true); o += 2;
+  }
+  return dv.buffer;
+};
+
+/* ---------------------------------------------------------------- preview */
+if (!location.search.includes('render')) {
+  const fit = () => {
+    const s = Math.min(innerWidth / W, innerHeight / H);
+    c.style.transform = `scale(${s})`;
+    c.style.transformOrigin = '0 0';
+    document.body.style.placeItems = 'start';
+    c.style.marginLeft = `${(innerWidth - W * s) / 2}px`;
+    c.style.marginTop = `${(innerHeight - H * s) / 2}px`;
+  };
+  addEventListener('resize', fit); fit();
+  document.fonts.ready.then(() => {
+    const t0 = performance.now();
+    const loop = () => {
+      window.seek(((performance.now() - t0) / 1000) % window.DURATION);
+      requestAnimationFrame(loop);
+    };
+    loop();
+  });
+} else {
+  document.fonts.load('900 300px "Geist"');
+}
+</script>
+</body>
+</html>
