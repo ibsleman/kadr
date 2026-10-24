@@ -98,7 +98,7 @@ back, and adds the render pipeline around them.
 the source URL.
 
 Code in this repository is MIT, © **ibrahim ([@ibsleman](https://github.com/ibsleman))** —
-see [LICENSE](LICENSE). Rights in each prompt stay with its author. If you wrote one and
+see [LICENSE](LICENSE) and [NOTICE.md](NOTICE.md). Rights in each prompt stay with its author. If you wrote one and
 want it out, open an issue.
 
 ### What you can and can't do
